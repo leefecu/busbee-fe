@@ -1,0 +1,21 @@
+.search-result {
+    font-family: 'Futura Md Bt';    
+    font-size : 20px;
+    width: 768px;
+
+    img {
+        width: 30px;
+    }   
+
+    table, tr, td {         
+        color: $gray;
+        background-color:white;
+        text-align : center;
+        padding : 10px;
+    }
+
+    th {
+        color : $black;
+        background-color: $lightgray;
+    }
+}

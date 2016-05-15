@@ -1,0 +1,54 @@
+@import "import/variables.scss";
+@import "import/fontface";
+
+@include fontFace('Futura Md Bt', 'font/FutuBd');
+
+header {
+    background-color:#f88d01;
+    width: 800px;
+    max-height:120px;
+
+
+        ul {
+            margin:0;
+            padding:0;
+
+            .back,.searchBar,.search {
+                vertical-align: bottom;
+            }
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+                padding: 10px 0;
+                
+
+                .back {
+                    width:30px;
+                    height:30px;
+
+
+                }
+
+                .searchBar {
+                    width:385px;
+                    height:25px;
+                    border: 1px solid white;
+                    border-radius:50px;
+                    margin: 0 10px 0 50px;
+                }
+
+                .search {
+                    width:30px;
+                    height:30px;
+                   
+
+                    }
+        }
+
+
+    }
+
+	font-family: 'Futura Md Bt';	
+    color: $black;    
+}

@@ -1,0 +1,148 @@
+/* import */
+@import "import/variables.scss";
+@import "import/fontface";
+
+/* common */
+$font_L: 6.9vw;
+$font_M: 4.1vw;
+$font_S: 3.7vw;
+$font_ss: 2.5vmin;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@font-face {
+    font-family: FutuMd;
+    src: url('/font/FutuMd.ttf');
+    font-family: FutuBd;
+    src: url('/font/FutuBd.ttf');
+}
+.clear{
+	clear:both;
+}
+body,
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+div,
+a,
+img,
+span,
+section {
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+  outline: none;
+}
+
+/* layout */
+body{
+	text-align:center;
+	width: 100%;	
+	line-height:1.0;
+    text-align:center; 	
+    font-family: 'FutuBd','Helvetica';
+}
+.main_con{
+	max-width:768px;
+	margin:0 auto; 	
+	text-align:center;
+}
+
+ /* logo */
+ .main_logo{
+ 	margin:20% auto 15% auto;
+
+	h1{
+	    font-size: $font_L;
+	    text-transform:uppercase;
+	    text-align:center; 
+	    margin-bottom:2%;
+	    color:$gray;
+	}
+	h2{
+		font-size: $font_M;
+		color: $orange;
+		text-transform:uppercase;
+		margin-top:0.5%;
+	}
+	img{
+		max-width: 100%; 
+	}
+}
+
+ /* search title */
+.main_search_title{
+	width:520px;
+	margin:20% auto 0 auto;
+
+	img{
+		float:left;
+	}
+	p{
+		font-size: $font_M;
+		font-weight:bold;
+		color:$gray;
+		padding-left:10px;
+		vertical-align: text-top;
+	}
+}
+
+ /* search function */
+.main_search{
+	margin:2% auto 20% auto;
+	width:520px;
+
+	input{
+		border:none;		
+		padding:10px 50px;		
+		@include border-radius(40px); 
+		color:$gray;
+		background-color:$middlegray;
+		font-size:$font_S;
+		width:330px;
+		height:5vh;
+
+		 /* inputbox is needed some mix function  */
+		-moz-box-shadow:inset 5px 5px 5px #9d9d9d; /* Firefox */
+		-webkit-box-shadow:inset 5px 5px 5px #9d9d9d; /* Safari, Chrome */
+		box-shadow:inset 5px 5px 5px #9d9d9d; /* CSS3 */
+
+		float:left;
+		margin-top:4px;
+	}
+	img{
+		float:left;
+		padding-left:7px;
+
+	}
+}
+
+ /* media max-width 768px */
+@media only screen and (max-width: 768px) { 
+	.main_con{
+		width:768px;  
+	}
+
+}
+
+ /* media max-width 435px */
+@media only screen and (max-width: 435px) {
+    
+	.main_search input{
+		width:150px;
+		height:3vh;
+	}
+}
