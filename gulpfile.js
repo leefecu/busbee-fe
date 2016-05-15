@@ -70,6 +70,11 @@ gulp.task('sass', function(cb) {
         .pipe($.connect.reload());
 })
 
+gulp.task('fonts', function(cb) {
+    return gulp.src(app + 'styles/font/**/*.*')
+        .pipe(gulp.dest(dist + 'css/font/'));
+})
+
 // add livereload on the given port
 gulp.task('serve', function() {
     $.connect.server({
@@ -103,7 +108,7 @@ gulp.task('clean', function(cb) {
 
 
 // by default build project and then watch files in order to trigger livereload
-gulp.task('default', ['images', 'html','scripts', 'sass', 'serve', 'watch']);
+gulp.task('default', ['images', 'html','scripts', 'sass', 'fonts', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){
