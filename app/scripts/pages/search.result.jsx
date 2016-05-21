@@ -1,6 +1,61 @@
 import React from 'react';
 
 class SearchResult extends React.Component {
+
+    constructor(props){
+        super(props)
+
+        this.state = {
+            data: []
+        }
+    }
+
+    componentWillMount () {
+        // API.call('givemedata', function(result) {
+        //     this.setState({data: result})
+        // })
+        var data = [
+            {
+                number: "123",
+                description: "123 bus"
+            },
+            {
+                number: "456",
+                description: "456 bus"
+            },
+            {
+                number: "789",
+                description: "789 bus"
+            },
+            {
+                number: "012",
+                description: "012 bus"
+            }
+        ]
+
+        this.setState({data: data})
+    }
+
+    componentDidMount () {}
+
+    componentWillReceiveProps () {}
+
+    componentWillUpdate () {}
+
+    componentDidUpdate () {}
+
+    componentWillUnmount () {}
+
+    renderResult(row, index) {
+        return (
+            <tr key={index}>
+                <td>{ row.number }</td>
+                <td>{ row.description }</td>
+                <td></td>
+            </tr>
+        )
+    }
+
     render() {
         return (
             <div className="search-result">
@@ -13,26 +68,9 @@ class SearchResult extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><a href="#">
-                            <td>8874</td>
-                            <td>Takapuna</td>
-                            <td><img src="../images/content/stop_black.png" /></td>
-                        </a></tr>
-                        <tr>
-                            <td>887</td>
-                            <td>Britomart</td>
-                            <td><img src="../images/content/bus_black.png" /></td>
-                        </tr>
-                        <tr>
-                            <td>8874</td>
-                            <td>Takapuna</td>
-                            <td><img src="../images/content/stop_black.png" /></td>
-                        </tr>
-                        <tr>
-                            <td>887</td>
-                            <td>Britomart</td>
-                            <td><img src="../images/content/bus_black.png" /></td>
-                        </tr>
+                        {
+                            this.state.data.map(this.renderResult)
+                        }
                     </tbody>
                 </table>
             </div>

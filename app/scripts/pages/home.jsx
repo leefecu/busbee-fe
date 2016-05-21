@@ -4,7 +4,7 @@ class Home extends React.Component {
     
     render() {
         return (
-            <div className="main_con">
+            <div className="main-con">
                 <div className="main_logo"> 
                     <h1>Real time<br/>bus finder</h1>                 
                     <img className="full-size" src="/images/content/main_logo.png" /> 
