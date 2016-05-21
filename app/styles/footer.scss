@@ -4,21 +4,45 @@
 @include fontFace('Futura Md Bt', 'font/FutuBd');
 
 footer {
-    max-width: 800px;
     max-height: 140px;
     background-color: $gray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     ul {
         list-style: none;
+        padding: 0 20px;
         li {
             display: inline-block;
-            margin: 0 7%;
-        }
-
-        img {
             padding: 5px 0;
+            width: 20%;
+        }
+    }
+
+    .tab-icon {
+        padding: 7px 0;
+        width: 30px;
+    }
+}
+
+ /* media max-width 435px */
+@media only screen and (min-width: 481px) {
+    footer {
+        .tab-icon {
+            padding: 7px 0;
             width: 35px;
-            height: 35px;
+        }
+    }
+}
+
+
+ /* media max-width 768px */
+@media only screen and (min-width: 769px) { 
+    footer {
+        .tab-icon {
+            padding: 7px 0;
+            width: 40px;
         }
     }
 }

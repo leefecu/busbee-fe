@@ -4,9 +4,10 @@ import Footer from '../components/footer.jsx'
 
 class App extends React.Component {
     render() {
+        console.log();
         return (
-            <div>
-                <Header />
+            <div className="container">
+                { this.props.location.pathname === '/' ? null : <Header />}
 
                 <div className="content">
                     {this.props.children}

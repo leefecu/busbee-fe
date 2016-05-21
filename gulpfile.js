@@ -67,6 +67,7 @@ gulp.task('sass', function(cb) {
         .pipe(concat('main.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(dist + 'css/'))
+        .pipe($.size({ title : 'sass' }))
         .pipe($.connect.reload());
 })
 
@@ -108,7 +109,7 @@ gulp.task('clean', function(cb) {
 
 
 // by default build project and then watch files in order to trigger livereload
-gulp.task('default', ['images', 'html','scripts', 'sass', 'fonts', 'serve', 'watch']);
+gulp.task('default', ['images', 'html', 'scripts', 'sass', 'fonts', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){
