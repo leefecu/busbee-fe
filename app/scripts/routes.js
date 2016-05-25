@@ -6,6 +6,7 @@ import App from './pages/app.jsx';
 import Home from './pages/home.jsx';
 import SearchResult from './pages/search.result.jsx';
 import NotFound from './pages/notFound.jsx';
+import Alarm from './pages/alarm.jsx';
 
 const historyOptions = {
   queryKey : false
@@ -17,6 +18,7 @@ const routes = (
       <IndexRoute component={ Home }/>
       <Route path='home' component={ Home } />
       <Route path='search' component={ SearchResult } />
+      <Route path='alarm' component= { Alarm }/>
       
       <Route path='*' component={NotFound}/>
     </Route>

@@ -1,0 +1,79 @@
+/* import */
+@import "import/variables";
+@import "import/fontface";
+@import "import/_mixins";
+
+/* common */
+$font_L: 6.9vw;
+$font_M: 4.1vw;
+$font_S: 3.7vw;
+$font_SS: 2.8vw;
+$font_SSS: 2.5vmin;
+
+
+@include fontFace('Futura Md Bt', 'font/FutuBd');
+
+.alarm-list {
+
+  		font-family: 'Futura Md Bt';    
+    	font-size : $font_SS;
+    	overflow: hidden;
+
+	table {
+		width: 400px;
+    	height: 510px;
+	}
+
+    img {
+        width: 30px;
+    }   
+
+    table, tr, td {         
+        color: $gray;
+        background-color:white;
+        text-align : center;
+        border-spacing: 0;
+        margin: 0;
+        padding: 0;
+    }
+            
+
+    th {
+        color : $black;
+        background-color: $lightgray;
+        height: 37px;
+        border-bottom: 1px solid #c3c3c3;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+	.alarm-list {
+		table{
+			width: 100%;
+			font-size : $font_SSS;
+		}
+	}
+    
+}
+
+ /* media max-width 435px */
+@media only screen and (min-width: 481px) {
+	.alarm-list {
+		table {
+			width: 100%;
+			font-size : $font_SS;
+		}
+	}
+}
+
+
+ /* media max-width 768px */
+@media only screen and (min-width: 769px) { 
+	.alarm-list {
+		table {
+			width: 768px;
+			font-size : $font_S;
+		}
+	}
+}
