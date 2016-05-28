@@ -13,12 +13,14 @@ class SearchResult extends React.Component {
 
     componentWillMount () {
         const self = this
-        fetch('http://localhost:3000/stops')
+        fetch('http://localhost:3001/stops')
             .then(function(response) {
                 return response.text()
             }).then(function(body) {
                 var lists = JSON.parse(body)
                 self.setState({data: lists})
+            }).catch(function(ex) {
+                console.log('Error', ex)
             })
     }
 
