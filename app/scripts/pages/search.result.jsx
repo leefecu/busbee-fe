@@ -1,4 +1,5 @@
 import React from 'react';
+import 'whatwg-fetch'
 
 class SearchResult extends React.Component {
 
@@ -11,29 +12,14 @@ class SearchResult extends React.Component {
     }
 
     componentWillMount () {
-        // API.call('givemedata', function(result) {
-        //     this.setState({data: result})
-        // })
-        var data = [
-            {
-                number: "123",
-                description: "123 bus"
-            },
-            {
-                number: "456",
-                description: "456 bus"
-            },
-            {
-                number: "789",
-                description: "789 bus"
-            },
-            {
-                number: "012",
-                description: "012 bus"
-            }
-        ]
-
-        this.setState({data: data})
+        const self = this
+        fetch('http://localhost:3000/stops')
+            .then(function(response) {
+                return response.text()
+            }).then(function(body) {
+                var lists = JSON.parse(body)
+                self.setState({data: lists})
+            })
     }
 
     componentDidMount () {}
@@ -49,8 +35,8 @@ class SearchResult extends React.Component {
     renderResult(row, index) {
         return (
             <tr key={index}>
-                <td>{ row.number }</td>
-                <td>{ row.description }</td>
+                <td>{ row.num }</td>
+                <td>{ row.name }</td>
                 <td></td>
             </tr>
         )
