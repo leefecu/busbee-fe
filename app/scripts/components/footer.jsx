@@ -56,22 +56,22 @@ class Footer extends React.Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to="map">
+                        <Link to="/map">
                             <img className="tab-icon" src={ this.getIcon('maps') } />
                         </Link>
                     </li>
                     <li>
-                        <Link to="alarm">
+                        <Link to="/alarm">
                             <img className="tab-icon" src={ this.getIcon('alarm') } />
                         </Link>
                     </li>
                     <li>
-                        <Link to="favorite">
+                        <Link to="/favorite">
                             <img className="tab-icon" src={ this.getIcon('favorite') } />
                         </Link>
                     </li>
                     <li>
-                        <Link to="more">
+                        <Link to="/more">
                             <img className="tab-icon" src={ this.getIcon('more') } />
                         </Link>
                     </li>
