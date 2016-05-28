@@ -3,7 +3,7 @@ module.exports.getConfig = function(type) {
   var isDev = type === 'development';
 
   var config = {
-    entry: './app/scripts/main.js',
+    entry: ['whatwg-fetch','./app/scripts/main.js'],
     output: {
       path: __dirname,
       filename: 'main.js'
