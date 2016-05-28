@@ -7,8 +7,8 @@ class Map extends React.Component {
         return (
             <div className="map-container">
                 <ul className="map-tab">
-                	<li><Link to="/">Bus list</Link></li>
-                	<li className="tab-active"><Link to="/">Map</Link></li>
+                   <li><Link to="/">Bus list</Link></li>
+                   <li className="tab-active"><Link to="/">Map</Link></li>
                 </ul>
                 <div id="googlemap"> d               
                 </div>
