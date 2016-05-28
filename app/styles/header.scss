@@ -5,7 +5,7 @@
 
 header {
     background-color:#f88d01;
-    width: 800px;
+    width: 100%;
     max-height:120px;
 
     .search {
@@ -46,6 +46,23 @@ header {
 
     }
 
+    span {
+        position: relative;
+        top: 28px;
+    }
+
+    nav {
+        .nav-item {
+            padding: 7px 20px;
+        }
+
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+    }
 
 	font-family: 'Futura Md Bt';	
     color: $black;    
