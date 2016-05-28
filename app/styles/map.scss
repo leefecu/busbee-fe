@@ -1,0 +1,82 @@
+/* import */
+@import "import/variables";
+@import "import/fontface";
+@import "import/_mixins";
+
+/* common */
+
+@font-face {
+    font-family: FutuMd;
+    src: url('/css/font/FutuMd.ttf');
+    font-family: FutuBd;
+    src: url('/css/font/FutuBd.ttf');
+}
+
+
+/* map */
+
+
+.map-container{
+    width: 100%;
+    margin:0 auto;  
+    text-align:center;
+    line-height:1.0;
+    font-family: 'FutuMd','Helvetica';
+    letter-spacing:-0.3px;
+
+    ul.map-tab{
+        height:8%;
+        background-color:$lightgray;
+        padding:2% 0;
+        border-bottom:solid 1px $middlegray;
+
+        li{
+            display: inline-block;
+            padding:0 18%;
+            text-align:center;
+            font-size:$font_ss;       
+            font-weight:bold; 
+
+            a{
+                text-decoration: none;
+                color:$gray;
+            }    
+        }
+        li:first-child{
+            border-right: solid 1px $middlegray;
+        }
+        li.tab-active{
+            a{
+                color:$orange;
+            }
+        }
+    }
+    #googlemap{
+        height:100%;
+        width:100%;
+        position:relative;
+    }
+}
+
+
+
+ /* media max-width 768px */
+@media only screen and (min-width: 769px) { 
+
+}
+
+ /* media max-width 435px */
+@media only screen and (max-width: 481px) {
+
+    .map-container{    
+
+        ul.map-tab{        
+
+            li{            
+                font-size:$font_S; 
+            }  
+           
+        }
+    }
+
+}
