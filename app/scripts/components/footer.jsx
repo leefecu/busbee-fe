@@ -25,6 +25,24 @@ class Footer extends React.Component {
             } else {
                 return '/images/footer/footer_maps_white.png';
             }
+        } else if (iconName === 'alarm') {
+            if (this.props.pathname === '/alarm') {
+                return '/images/footer/footer_alarm_orange.png';
+            } else {
+                return '/images/footer/footer_alarm_white.png';
+            }
+        } else if (iconName === 'favorite') {
+            if (this.props.pathname === '/favorite') {
+                return '/images/footer/footer_favorite_orange.png';
+            } else {
+                return '/images/footer/footer_favorite_white.png';
+            }
+        } else if (iconName === 'more') {
+            if (this.props.pathname === '/more') {
+                return '/images/footer/footer_more_orange.png';
+            } else {
+                return '/images/footer/footer_more_white.png';
+            }
         }
     }
 
@@ -38,23 +56,23 @@ class Footer extends React.Component {
                         </Link>
                     </li>
                     <li>
-                        <Link to="map">
+                        <Link to="/map">
                             <img className="tab-icon" src={ this.getIcon('maps') } />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
-                            <img className="tab-icon" src="/images/footer/footer_alarm_white.png" />
+                        <Link to="/alarm">
+                            <img className="tab-icon" src={ this.getIcon('alarm') } />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
-                            <img className="tab-icon" src="/images/footer/footer_favorite_white.png" />
+                        <Link to="/favorite">
+                            <img className="tab-icon" src={ this.getIcon('favorite') } />
                         </Link>
                     </li>
                     <li>
-                        <Link to="/">
-                            <img className="tab-icon" src="/images/footer/footer_more_white.png" />
+                        <Link to="/more">
+                            <img className="tab-icon" src={ this.getIcon('more') } />
                         </Link>
                     </li>
                 </ul>
