@@ -16,21 +16,12 @@ const historyOptions = {
 const routes = (
   <Router history={createHistory(historyOptions)}>
     <Route path='/' component={ App }>
-<<<<<<< HEAD
       <IndexRoute component={ Home }/>
       <Route path='home' component={ Home } />
       <Route path='search' component={ SearchResult } />
       <Route path='alarm' component= { Alarm }/>
-      
+      <Route path='map' component={ Map } />  
       <Route path='*' component={NotFound}/>
-=======
-		<IndexRoute component={ Home }/>
-		<Route path='home' component={ Home } />
-		<Route path='search' component={ SearchResult } />
-		<Route path='map' component={ Map } />
-
-		<Route path='*' component={NotFound}/>
->>>>>>> master
     </Route>
   </Router>
 );
