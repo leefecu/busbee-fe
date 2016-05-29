@@ -15,6 +15,7 @@
             "stops" : 2
         }
     ],
+
     "stops": [
         {
             "id" : "8874",
@@ -27,6 +28,46 @@
             "num" : "8879",
             "name" : "Carrington Rd opp Fifth Ave",
             "type" : "B"
+        }
+    ],
+
+    "alarmList": [
+        {
+            "id" : "1",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "2",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "3",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+            
+        },
+
+        {
+            "id" : "4",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+        },
+
+        {
+            "id" : "5",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
         }
     ]
 }
