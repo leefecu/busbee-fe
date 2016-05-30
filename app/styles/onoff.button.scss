@@ -1,6 +1,7 @@
 .onoffswitch {
     position: relative; width: 90px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    display: inline-block;
 }
 .onoffswitch-checkbox {
     display: none;
@@ -22,12 +23,14 @@
     content: "ON";
     padding-left: 10px;
     background-color: #34A7C1; color: #FFFFFF;
+    
 }
 .onoffswitch-inner:after {
     content: "OFF";
     padding-right: 10px;
     background-color: #EEEEEE; color: #999999;
     text-align: right;
+
 }
 .onoffswitch-switch {
     display: block; width: 18px; margin: 6px;
