@@ -25,6 +25,7 @@
     letter-spacing:-0.3px;
 
     ul.map-tab{
+        position: relative;
         height:8%;
         background-color:$lightgray;
         padding:2% 0;
@@ -51,8 +52,7 @@
             }
         }
     }
-    #googlemap{
-        height:100%;
+    .googlemap{
         width:100%;
         position:relative;
     }
