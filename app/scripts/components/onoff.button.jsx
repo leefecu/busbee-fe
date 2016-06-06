@@ -2,21 +2,27 @@ import React from 'react';
 
 
 class onOffButton extends React.Component {
-
-
+    getChecked(checkedState) {
+        console.log(checkedState);
+    }
 
     render() {
-        return (
 
-            <div className="onoffswitch">
-            <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" defaultChecked={ this.props.alarmType === "Y" ? "true" : ""}  />
-            <label className="onoffswitch-label" htmlFor="myonoffswitch">
-                <span className="onoffswitch-inner"></span>
-                <span className="onoffswitch-switch"></span>
-            </label>
-            </div>
-        )
-    }
+            return (
+                <div className="onoffswitch">
+                <input type="checkbox" name="onoffswitch" 
+                className="onoffswitch-checkbox" 
+                id={ this.props.alarmId } 
+                defaultChecked={ this.props.alarmType === "Y" ? "true" : ""}  
+                onChange={ this.getChecked(this.props.alarmId) } />
+
+                <label className="onoffswitch-label" htmlFor={ this.props.alarmId }>
+                    <span className="onoffswitch-inner"></span>
+                    <span className="onoffswitch-switch"></span>
+                </label>
+                </div>
+            )
+        }
 };
 
 export default onOffButton;

@@ -45,11 +45,13 @@ class Alarm extends React.Component {
                 <td>{ row.num }</td>
                 <td>{ row.stop }</td>
                 <td><OnOffButton alarmId={row.id} alarmType={row.type} /></td>
+
             </tr>
         )
     }
 
     render() {
+       
         return (
             <div className="alarm-list">
                 <table>
