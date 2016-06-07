@@ -1,0 +1,32 @@
+{
+    "lists": [
+        {
+            "id" : "27701-20160404114523_v39.23",
+            "num" : "887",
+            "name" : "constellation",
+            "arr_time" : "13:48",
+            "stops" : 5
+        }, 
+        {
+            "id" : "27701-20160404114523_v40.23",
+            "num" : "987",
+            "name" : "Glenfield mall",  
+            "arr_time" : "13:41",
+            "stops" : 2
+        }
+    ],
+    "stops": [
+        {
+            "id" : "8874",
+            "num" : "8874",
+            "name" : "15 Albert St, Auckland city",
+            "type" : "B"
+        },
+        {
+            "id" : "8879",
+            "num" : "8879",
+            "name" : "Carrington Rd opp Fifth Ave",
+            "type" : "B"
+        }
+    ]
+}

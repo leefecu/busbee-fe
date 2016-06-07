@@ -5,16 +5,17 @@ class Header extends React.Component {
 
     render() {
         return (
-                <header>
-                    <ul>
-                        <li>
-                        
-                        <img className="back" src="/images/top/arrows_white.png" /></li>
-                        <li><input type="text" className="searchBar" /></li>
-                        <li><img className="search" src="/images/top/search_white.png" /></li>
-                    </ul>
-                </header>
-            
+            <header className="clearfix">
+                Application Name
+                <nav className="clearfix">
+                    <div className="nav-item left">
+                        <Link to="home"><img className="search" src="/images/top/arrows_white.png" /></Link>
+                    </div>
+                    <div className="nav-item right">
+                        <Link to="search"><img className="search" src="/images/top/search_white.png" /></Link>
+                    </div>
+                </nav>
+            </header>
         )
     }
 };
