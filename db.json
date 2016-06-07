@@ -1,20 +1,5 @@
 {
-    "lists": [
-        {
-            "id" : "27701-20160404114523_v39.23",
-            "num" : "887",
-            "name" : "constellation",
-            "arr_time" : "13:48",
-            "stops" : 5
-        }, 
-        {
-            "id" : "27701-20160404114523_v40.23",
-            "num" : "987",
-            "name" : "Glenfield mall",  
-            "arr_time" : "13:41",
-            "stops" : 2
-        }
-    ],
+    "searchListResult": [{"id":"0277","num":"277","name":"Grafton Train Station","type":"S"},{"id":"2277","num":"2277","name":"Greenmeadows Intermediate","type":"S"},{"id":"8277","num":"8277","name":"225 New Windsor Rd","type":"S"},{"id":"3277","num":"3277","name":"57 Anzac St","type":"S"},{"id":"5277","num":"5277","name":"3 Beaubank Rd","type":"S"},{"id":"4277","num":"4277","name":"1422 Whangaparaoa Rd","type":"S"},{"id":"6277","num":"6277","name":"1 Granger Rd","type":"S"},{"id":"27702-20160512154122_v40.34","num":"277","name":"Britomart To Waikowhai","type":"B"},{"id":"27701-20160512154122_v40.34","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27701-20160518153157_v41.13","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27702-20160518153157_v41.13","num":"277","name":"Britomart To Waikowhai","type":"B"}],
     "stops": [
         {
             "id" : "8874",
