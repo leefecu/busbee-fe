@@ -11,7 +11,7 @@ class SearchResult extends React.Component {
         }
     }
 
-    componentWillMount () {
+    /*componentWillMount () {
         const self = this
         fetch('http://localhost:3000/stops')
             .then(function(response) {
@@ -22,7 +22,7 @@ class SearchResult extends React.Component {
             }).catch(function(ex) {
                 console.log('Error', ex)
             })
-    }
+    }*/
 
     componentDidMount () {}
 
