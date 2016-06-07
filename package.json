@@ -42,15 +42,16 @@
     "json-server": "^0.8.14",
     "object-assign": "^4.0.1",
     "orchestrator": "^0.3.7",
-    "react-addons-test-utils": "^0.14.2",
+    "react-addons-test-utils": "*",
     "webpack": "^1.12.3"
   },
   "dependencies": {
     "history": "^1.13.0",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
+    "react": "*",
+    "react-dom": "*",
+    "react-gmaps": "^1.5.0",
     "react-router": "^1.0.0",
-    "reflux": "^0.3.0",
+    "reflux": "*",
     "whatwg-fetch": "^1.0.0"
   },
   "jest": {
