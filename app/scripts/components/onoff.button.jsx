@@ -2,9 +2,14 @@ import React from 'react';
 
 
 class onOffButton extends React.Component {
-    getChecked(checkedState) {
-        console.log(checkedState);
+    // getChecked (checkedState) {
+    //     console.log(checkedState);
+    // }
+
+    getChecked(alarmId) {
+        console.log(alarmId);
     }
+
 
     render() {
 
@@ -15,6 +20,7 @@ class onOffButton extends React.Component {
                 id={ this.props.alarmId } 
                 defaultChecked={ this.props.alarmType === "Y" ? "true" : ""}  
                 onChange={ this.getChecked(this.props.alarmId) } />
+               
 
                 <label className="onoffswitch-label" htmlFor={ this.props.alarmId }>
                     <span className="onoffswitch-inner"></span>
