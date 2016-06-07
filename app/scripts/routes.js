@@ -20,7 +20,7 @@ const routes = (
       <Route path='home' component={ Home } />
       <Route path='search' component={ SearchResult } />
       <Route path='alarm' component= { Alarm }/>
-      <Route path='map' component={ Map } />  
+      <Route path='map' component={ Map } />
       <Route path='*' component={NotFound}/>
     </Route>
   </Router>

@@ -8,11 +8,13 @@ class Header extends React.Component {
             <header className="clearfix">
                 Application Name
                 <nav className="clearfix">
+
                     <div className="nav-item left">
                         <Link to="home"><img className="search" src="/images/top/arrows_white.png" /></Link>
                     </div>
                     <div className="nav-item right">
                         <Link to="search"><img className="search" src="/images/top/search_white.png" /></Link>
+
                     </div>
                 </nav>
             </header>

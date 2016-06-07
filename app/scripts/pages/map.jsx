@@ -45,8 +45,10 @@ class Map extends React.Component {
         return (
             <div className="map-container">
                 <ul className="map-tab">
+
                 	<li><Link to="/Map">Bus list</Link></li>
                 	<li className="tab-active"><Link to="/Map">Map</Link></li>
+
                 </ul>
                 <div class="googlemap">
                 	<Gmaps
