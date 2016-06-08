@@ -18,7 +18,7 @@ const routes = (
     <Route path='/' component={ App }>
       <IndexRoute component={ Home }/>
       <Route path='home' component={ Home } />
-      <Route path='search' component={ SearchResult } />
+      <Route path="search/:saerchVal" component={SearchResult}/>
       <Route path='alarm' component= { Alarm }/>
       <Route path='map' component={ Map } />
       <Route path='*' component={NotFound}/>
