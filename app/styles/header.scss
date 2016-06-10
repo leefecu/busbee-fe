@@ -65,30 +65,10 @@ header {
         }
     }
 
+    font-family: 'Futura Md Bt';    
+    color: $black;    
 }
 
-
-@media only screen and (min-width: 320px) {
-       .searchBar {
-            width:100px;
-       }
-}
-
- /* media max-width 435px */
-@media only screen and (min-width: 481px) {
-       .searchBar {
-            width:200px;
-       }
-}
-
-
- /* media max-width 768px */
-@media only screen and (max-width: 769px) { 
-       .searchBar {
-            width:300px;
-       }
-    
-}
 
 
 

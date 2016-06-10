@@ -11,9 +11,9 @@ class SearchResult extends React.Component {
         }
     }
 
-    /*componentWillMount () {
+    componentWillMount () {
         const self = this
-        fetch('http://localhost:3000/stops')
+        fetch('http://localhost:3000/searchListResult')
             .then(function(response) {
                 return response.text()
             }).then(function(body) {
@@ -22,24 +22,21 @@ class SearchResult extends React.Component {
             }).catch(function(ex) {
                 console.log('Error', ex)
             })
-    }*/
-
-    componentDidMount () {}
-
-    componentWillReceiveProps () {}
-
-    componentWillUpdate () {}
-
-    componentDidUpdate () {}
-
-    componentWillUnmount () {}
+    }
 
     renderResult(row, index) {
         return (
             <tr key={index}>
                 <td>{ row.num }</td>
                 <td>{ row.name }</td>
-                <td></td>
+                <td>
+                {(() => {
+                    switch (row.type) {                    
+                      case "B": return <img src="/images/content/bus_black.png" />;
+                      case "S": return <img src="/images/content/stop_black.png" />;
+                    }
+                })()}
+                </td>
             </tr>
         )
     }
@@ -52,7 +49,7 @@ class SearchResult extends React.Component {
                         <tr>
                             <th>Num</th>
                             <th>Description</th>
-                            <th></th>
+                            <th>B/S</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -4,3 +4,11 @@ app/bower_components
 app/bundles
 *.log
 db.json
+.DS_Store
+app/.DS_Store
+app/scripts/.DS_Store
+app/scripts/components/.DS_Store
+app/images/.DS_Store
+app/images/content/.DS_Store
+app/images/footer/.DS_Store
+app/images/top/.DS_Store

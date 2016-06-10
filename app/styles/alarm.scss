@@ -41,9 +41,29 @@ $font_SSS: 2.5vmin;
     th {
         color : $black;
         background-color: $lightgray;
-        height: 37px;
+        height: 35px;
         border-bottom: 1px solid #c3c3c3;
+		
+
     }
+
+    th:nth-child(1) {
+		width: 25%;
+    }
+
+    th:nth-child(2) {
+
+    	width: 46.25%;
+    	border-right: 1px solid #c3c3c3;
+    	border-left: 1px solid #c3c3c3;
+    	height: 10px;
+    }
+
+    th:nth-child(3) {
+    	width: 28.75%;
+    }
+
+
 }
 
 
@@ -51,7 +71,7 @@ $font_SSS: 2.5vmin;
 	.alarm-list {
 		table{
 			width: 100%;
-			font-size : $font_SSS;
+			font-size : $font_M;
 		}
 	}
     
@@ -62,7 +82,7 @@ $font_SSS: 2.5vmin;
 	.alarm-list {
 		table {
 			width: 100%;
-			font-size : $font_SS;
+			font-size : $font_S;
 		}
 	}
 }
@@ -73,7 +93,7 @@ $font_SSS: 2.5vmin;
 	.alarm-list {
 		table {
 			width: 768px;
-			font-size : $font_S;
+			font-size : $font_SS;
 		}
 	}
 }
