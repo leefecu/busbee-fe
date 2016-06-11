@@ -1,7 +1,7 @@
 import React from 'react';
 import 'whatwg-fetch'
 
-class SearchResult extends React.Component {
+class Favorite extends React.Component {
 
     constructor(props){
         super(props)
@@ -10,9 +10,8 @@ class SearchResult extends React.Component {
             data: []
         }
     }
-
+    
     componentWillMount () {
-        var searchParam = this.props.params.saerchVal;
         const self = this
         fetch('http://localhost:3000/searchListResult')
             .then(function(response) {
@@ -25,7 +24,7 @@ class SearchResult extends React.Component {
             })
     }
 
-    renderResult(row, index) {
+    renderFavorite(row, index) {
         return (
             <tr key={index}>
                 <td>{ row.num }</td>
@@ -44,7 +43,7 @@ class SearchResult extends React.Component {
 
     render() {
         return (
-            <div className="search-result">
+            <div className="favorite_01">
                 <table>
                     <thead>
                         <tr>
@@ -55,14 +54,32 @@ class SearchResult extends React.Component {
                     </thead>
                     <tbody>
                         {
-                            this.state.data.map(this.renderResult)
+                            this.state.data.map(this.renderFavorite)
+                        }
+                    </tbody>
+                </table>
+                 <table>
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Description</th>
+                            <th>B/S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            this.state.data.map(this.renderFavorite)
                         }
                     </tbody>
                 </table>
             </div>
         );
+
     }
     
 };
+
+
+
     
-export default SearchResult;
+export default Favorite;
