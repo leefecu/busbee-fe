@@ -1,69 +1,95 @@
-@import "import/variables.scss";
+/* import */
+@import "import/variables";
 @import "import/fontface";
+@import "import/_mixins";
+
+/* common */
+$font_L: 6.9vw;
+$font_M: 4.1vw;
+$font_S: 3.7vw;
+$font_SS: 2.8vw;
+$font_SSS: 2.5vmin;
 
 @include fontFace('Futura Md Bt', 'font/FutuBd');
 
 header {
-    background-color:#f88d01;
+    background-color: #f88d01;
     width: 100%;
-    max-height:120px;
-
-    .search {
-        width:30px;
-        height:30px;
-    }
-
+    height: 80px;
 
     ul {
-        margin:0;
-        padding:0;
-
-        .back,.searchBar,.search {
-            vertical-align: bottom;
-        }
+        list-style-type: none;
 
         li {
-            list-style-type: none;
-            display: inline-block;
-            padding: 10px 0;
-            
+        margin: 20px 0;  
+        display: inline-block;
+        vertical-align: bottom;
 
-            .back {
-                width:30px;
-                height:30px;
 
+            input[type="text"] {
+                width: 250px;
+                height: 30px;
+                border-radius: 50px;
+                border: 0;
+                margin: 0 20px;
 
             }
 
-            .searchBar {
-                width:385px;
-                height:25px;
-                border: 1px solid white;
-                border-radius:50px;
-                margin: 0 10px 0 50px;
+
+            img {
+                width: 30px;
+                height: 30px;
+
             }
+
+            .bus{
+                margin:0 0 0 150px;
+
+            }
+
+            .stop{
+                margin: 0 0 0 20px;
+
+            }
+
+            .bin{
+                margin: 0 0 0 150px;
+
+            }
+
+            .alarmText{
+                margin: 0 0 0 50px;
+
+            }
+ 
         }
 
-    }
 
-    span {
-        position: relative;
-        top: 28px;
-    }
+        li.favoriteText{
+            font-size : $font_S;
+            margin-left:150px;
 
-    nav {
-        .nav-item {
-            padding: 7px 20px;
+        }            
+
+        li.alarmText{
+            font-size : $font_S;
+            margin-left:150px;
+
         }
 
-        .left{
+        li:nth-child(1) {
             float: left;
-        }
-        .right{
-            float: right;
         }
     }
 
     font-family: 'Futura Md Bt';    
     color: $black;    
 }
+
+
+
+
+
+
+
+

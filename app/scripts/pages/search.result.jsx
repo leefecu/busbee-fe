@@ -10,7 +10,7 @@ class SearchResult extends React.Component {
             data: []
         }
     }
-    
+
     componentWillMount () {
         var searchParam = this.props.params.saerchVal;
         const self = this
