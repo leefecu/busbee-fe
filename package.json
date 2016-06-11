@@ -51,6 +51,7 @@
     "react-dom": "*",
     "react-gmaps": "^1.5.0",
     "react-router": "^1.0.0",
+    "react-tab-panel": "^2.2.0",
     "reflux": "*",
     "whatwg-fetch": "^1.0.0"
   },

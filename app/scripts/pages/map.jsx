@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router';
 import {Gmaps, Marker, InfoWindow} from 'react-gmaps';
+import TabPanel, { TabStrip } from 'react-tab-panel';
+import 'whatwg-fetch'
+
 
 class Map extends React.Component {
     constructor(props){
@@ -9,7 +11,8 @@ class Map extends React.Component {
 
         this.state = {
             lat: 0,
-  			lng: 0
+  			lng: 0,
+  			data: []
         }
     }
 
@@ -21,6 +24,24 @@ class Map extends React.Component {
   		var lng =  174.767695;
         this.setState({lat: lat})
         this.setState({lng: lng})
+        const self = this
+        fetch('http://localhost:3000/stops')
+            .then(function(response) {
+                return response.text()
+            }).then(function(body) {
+                var lists = JSON.parse(body)
+                self.setState({data: lists})
+            }).catch(function(ex) {
+                console.log('Error', ex)
+            })
+    }
+    renderResult(row, index) {
+        return (
+            <tr key={index}>
+                <td>{ row.num }</td>
+                <td>{ row.name }</td>               
+            </tr>
+        )
     }
 
     onMapCreated(map) {
@@ -43,17 +64,33 @@ class Map extends React.Component {
 
     render() {
         return (
-            <div className="map-container">
-                <ul className="map-tab">
 
-                	<li><Link to="/Map">Bus list</Link></li>
-                	<li className="tab-active"><Link to="/Map">Map</Link></li>
+            <div className="map-container" >
+            <TabPanel onActivate={(index) => console.log('Tab ' + index + ' was activated!')} tabAlign="stretch" tabPosition="top">
+			    <div tabTitle="Stop list">
+			      <div className="search-result">
+	                <table>
+	                    <thead>
+	                        <tr>
+	                            <th>Num</th>
+	                            <th>Description</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        {
+	                            this.state.data.map(this.renderResult)
+	                        }
+	                    </tbody>
+	                </table>
+	              </div>
+			    </div>
 
-                </ul>
-                <div class="googlemap">
+			    <div tabTitle="Map">
+			      <div class="googlemap" >
                 	<Gmaps
-				        width={'100%'}
-				        height={'600px'}
+
+                		width={'100%'}
+                		height={'100vh'}                	    
 				        lat={this.state.lat}
 				        lng={this.state.lng}
 				        zoom={14}
@@ -73,6 +110,9 @@ class Map extends React.Component {
 				       
 				      </Gmaps>
                 </div>
+			    </div>
+			  </TabPanel>
+                
             </div>
         );
     }

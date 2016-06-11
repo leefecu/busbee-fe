@@ -13,48 +13,146 @@
 }
 
 
+
+/* Tab */
+
+@import '~react-flex/index.css';
+
+
+.react-tab-panel,
+.react-tab-panel__tab-strip {
+  box-sizing: border-box;
+  font-family:FutuBd;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+}
+
+.react-tab-panel {
+
+  width: 100%;
+
+}
+.react-tab-panel--tab-position-top,
+.react-tab-panel--tab-position-bottom {
+  // flex-flow: column;
+}
+
+.react-tab-panel--tab-position-left,
+.react-tab-panel--tab-position-right {
+  // flex-flow: row;
+}
+.react-tab-panel__tab-strip {
+
+
+  &:focus {
+    outline: none
+  }  
+}
+.react-tab-panel__tab-strip-scroll-wrap {
+
+}
+.react-tab-panel__tab-strip-scroll-tool {
+
+
+  
+  &--hidden {
+    display: none;
+  }
+
+}
+.react-tab-panel--theme-default .react-tab-panel__body--tab-position-top{
+    width:100%;
+    clear:both;
+}
+.react-tab-panel__body {
+  flex: 1 1 auto;
+  overflow: auto;
+  position: relative;
+
+}
+.react-tab-panel__tab-strip--tab-align-stretch {
+
+  .react-tab-panel__tab-strip-before,
+  .react-tab-panel__tab-strip-after {
+    //we still need flex 1, and on tab-title flex: 100
+    //since we could have a specified maxwidth on tabs, and they could
+    //be less than the width of the tabStrip. In this case, the rest of the tabstrip
+    //would not have a valid background. So we make tab-strip-before and -after
+    //have a flex of 1 to make sure the tabstrip is always filled
+    flex: 1;
+  }
+  .react-tab-panel__tab-strip-between {
+    flex: none;
+  }
+    .react-tab-panel__tab-title{
+        float:left;
+        border-right:1px solid $lightgray;
+        border-bottom:solid 1px $middlegray;
+        width:50%;
+        padding:10px 0;
+        flex: 1000 0 auto; //0 for no shrink
+        //display: inline-flex;
+        flex-flow: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .react-tab-panel__tab-strip-inner {
+      flex: 1 0 auto;
+      position: relative;
+    }
+
+  .react-tab-panel__tab-title--active {
+    //needed in order to avoid a Chrome flex bug
+    flex: 1001 0 auto;
+    color:$orange;
+
+    
+  }
+}
+
+.react-tab-panel__tab-title {
+  cursor: pointer;
+  //display: inline-block;
+  position: relative;
+
+  white-space: nowrap;
+
+  &-inner--ellipsis,
+  &--ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &--disabled {
+    cursor: default;
+    user-select: none;
+  }
+}
+
+
 /* map */
 
 
 .map-container{
     width: 100%;
+    height:100%;
     margin:0 auto;  
     text-align:center;
     line-height:1.0;
     font-family: 'FutuMd','Helvetica';
     letter-spacing:-0.3px;
-
-    ul.map-tab{
-        position: relative;
-        height:8%;
-        background-color:$lightgray;
-        padding:2% 0;
-        border-bottom:solid 1px $middlegray;
-
-        li{
-            display: inline-block;
-            padding:0 18%;
-            text-align:center;
-            font-size:$font_ss;       
-            font-weight:bold; 
-
-            a{
-                text-decoration: none;
-                color:$gray;
-            }    
-        }
-        li:first-child{
-            border-right: solid 1px $middlegray;
-        }
-        li.tab-active{
-            a{
-                color:$orange;
-            }
-        }
-    }
+    position:relative;
     .googlemap{
-        width:100%;
-        position:relative;
+        width:100%; 
+        position:absolute;
+        top:0;
+        left:0;
+        overflow:none;        
     }
 }
 
