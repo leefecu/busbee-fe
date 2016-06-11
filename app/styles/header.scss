@@ -1,5 +1,14 @@
-@import "import/variables.scss";
+/* import */
+@import "import/variables";
 @import "import/fontface";
+@import "import/_mixins";
+
+/* common */
+$font_L: 6.9vw;
+$font_M: 4.1vw;
+$font_S: 3.7vw;
+$font_SS: 2.8vw;
+$font_SSS: 2.5vmin;
 
 @include fontFace('Futura Md Bt', 'font/FutuBd');
 
@@ -16,6 +25,7 @@ header {
         display: inline-block;
         vertical-align: bottom;
 
+
             input[type="text"] {
                 width: 250px;
                 height: 30px;
@@ -25,10 +35,6 @@ header {
 
             }
 
-            .favoriteText{
-                font-size: $font_SS;
-
-            }            
 
             img {
                 width: 30px;
@@ -37,7 +43,7 @@ header {
             }
 
             .bus{
-                margin:0 0 0 300px;
+                margin:0 0 0 150px;
 
             }
 
@@ -47,7 +53,7 @@ header {
             }
 
             .bin{
-                margin: 0 0 0 300px;
+                margin: 0 0 0 150px;
 
             }
 
@@ -55,10 +61,21 @@ header {
                 margin: 0 0 0 50px;
 
             }
-
+ 
         }
 
 
+        li.favoriteText{
+            font-size : $font_S;
+            margin-left:150px;
+
+        }            
+
+        li.alarmText{
+            font-size : $font_S;
+            margin-left:150px;
+
+        }
 
         li:nth-child(1) {
             float: left;
@@ -68,8 +85,6 @@ header {
     font-family: 'Futura Md Bt';    
     color: $black;    
 }
-
-
 
 
 

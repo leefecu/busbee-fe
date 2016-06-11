@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 class Header extends React.Component {
 
     checkPathName(){
+        console.log("111111");
         if(this.props.pathname === '/search'){
             return ( 
                     <ul className="search">
@@ -11,7 +12,6 @@ class Header extends React.Component {
                         <img className="back" src="/images/top/arrows_white.png" /></li>
                         <li><input type="text" className="searchBar" /></li>
                         <li><img className="search" src="/images/top/search_white.png" /></li>
-                        
                     </ul>
                 )
 
@@ -35,29 +35,29 @@ class Header extends React.Component {
                         <img className="back" src="/images/top/arrows_black.png" /></li>
                         <li className="alarmText">Alarm Set List</li>
                         <li><img className="bin" src="/images/top/bin_black.png" /></li>
-                        
                  </ul>
 
                 )
 
-        }
+        }  else if (this.props.pathname === '/map'){
+            return (
+                <ul className="map">
+                       <li>
+                        <img className="back" src="/images/top/arrows_white.png" /></li>
+                        <li><input type="text" className="searchBar" /></li>
+                        <li><img className="search" src="/images/top/search_white.png" /></li>
+                       </ul>
+
+                )
+
+        } 
 
     }
 
     render() {
         return (
             <header className="clearfix">
-                Application Name
-                <nav className="clearfix">
-
-                    <div className="nav-item left">
-                        <Link to="home"><img className="search" src="/images/top/arrows_white.png" /></Link>
-                    </div>
-                    <div className="nav-item right">
-                        <Link to="search"><img className="search" src="/images/top/search_white.png" /></Link>
-
-                    </div>
-                </nav>
+                {this.checkPathName()}
             </header>
         )
     }
