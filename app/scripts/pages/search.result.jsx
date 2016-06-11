@@ -13,7 +13,7 @@ class SearchResult extends React.Component {
     
     componentWillMount () {
         const self = this
-        fetch('http://localhost:3000/searchListResult')
+        fetch('http://localhost:3000/Stop')
             .then(function(response) {
                 return response.text()
             }).then(function(body) {
@@ -28,15 +28,7 @@ class SearchResult extends React.Component {
         return (
             <tr key={index}>
                 <td>{ row.num }</td>
-                <td>{ row.name }</td>
-                <td>
-                {(() => {
-                    switch (row.type) {                    
-                      case "B": return <img src="/images/content/bus_black.png" />;
-                      case "S": return <img src="/images/content/stop_black.png" />;
-                    }
-                })()}
-                </td>
+                <td>{ row.name }</td>                
             </tr>
         )
     }
@@ -48,8 +40,7 @@ class SearchResult extends React.Component {
                     <thead>
                         <tr>
                             <th>Num</th>
-                            <th>Description</th>
-                            <th>B/S</th>
+                            <th>Description</th>                            
                         </tr>
                     </thead>
                     <tbody>
