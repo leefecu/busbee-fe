@@ -6,6 +6,7 @@ import App from './pages/app.jsx';
 import Home from './pages/home.jsx';
 import SearchResult from './pages/search.result.jsx';
 import Map from './pages/map.jsx';
+import Favorite from './pages/favorite.jsx';
 import NotFound from './pages/notFound.jsx';
 import Alarm from './pages/alarm.jsx';
 
@@ -21,6 +22,7 @@ const routes = (
       <Route path="search/:saerchVal" component={SearchResult}/>
       <Route path='alarm' component= { Alarm }/>
       <Route path='map' component={ Map } />
+      <Route path='favorite' component={ Favorite } />
       <Route path='*' component={NotFound}/>
     </Route>
   </Router>

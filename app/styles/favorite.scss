@@ -1,0 +1,52 @@
+/* import */
+@import "import/variables";
+@import "import/fontface";
+@import "import/_mixins";
+
+/* common */
+
+@font-face {
+    font-family: FutuMd;
+    src: url('/css/font/FutuMd.ttf');
+    font-family: FutuBd;
+    src: url('/css/font/FutuBd.ttf');
+}
+
+
+/* favorite */
+
+.favorite_01 {
+    padding: 0;  
+    font-family: 'FutuMd','Helvetica';   
+    font-weight: bold; 
+    
+
+    img {
+        width: 30px;
+    }   
+
+    table{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    table, tr, td {   
+        color: $gray;
+        background-color: $white;
+        text-align : center;       
+    }
+
+    th {
+        color : $black;
+        background-color: $lightgray;
+        height: 37px;
+        border-bottom: 1px solid $middlegray;
+    }
+
+    tr, td  {
+        padding: 5px;
+    }
+}
+
+
