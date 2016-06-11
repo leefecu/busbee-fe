@@ -28,7 +28,15 @@ class SearchResult extends React.Component {
         return (
             <tr key={index}>
                 <td>{ row.num }</td>
-                <td>{ row.name }</td>                
+                <td>{ row.name }</td>
+                <td>
+                {(() => {
+                    switch (row.type) {                    
+                      case "B": return <img src="/images/content/bus_black.png" />;
+                      case "S": return <img src="/images/content/stop_black.png" />;
+                    }
+                })()}
+                </td>
             </tr>
         )
     }
@@ -40,7 +48,8 @@ class SearchResult extends React.Component {
                     <thead>
                         <tr>
                             <th>Num</th>
-                            <th>Description</th>                            
+                            <th>Description</th>
+                            <th>B/S</th>
                         </tr>
                     </thead>
                     <tbody>
