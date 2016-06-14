@@ -71,6 +71,196 @@
             "num" : "656",
             "stop" : "4334 - Highbury Shop",
             "type" : "Y"
+        },
+        {
+            "id" : "6",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "7",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "8",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+            
+        },
+
+        {
+            "id" : "9",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+        },
+
+        {
+            "id" : "10",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+        },
+
+        {
+            "id" : "11",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "12",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "13",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+            
+        },
+
+        {
+            "id" : "14",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+        },
+
+
+        {
+            "id" : "16",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "17",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "18",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+            
+        },
+
+        {
+            "id" : "19",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+        },
+
+        {
+            "id" : "20",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+        },
+
+        {
+            "id" : "21",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "22",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "23",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+            
+        },
+
+        {
+            "id" : "24",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+        },
+
+        {
+            "id" : "25",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+        },
+
+        {
+            "id" : "26",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+        },
+
+        {
+            "id" : "27",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "28",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+            
+        },
+
+        {
+            "id" : "29",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
+            
+        },
+
+        {
+            "id" : "30",
+            "num" : "887",
+            "stop" : "2475 - Constellation",
+            "type" : "N"
+        },
+
+        {
+            "id" : "31",
+            "num" : "656",
+            "stop" : "4334 - Highbury Shop",
+            "type" : "Y"
         }
     ]
 }

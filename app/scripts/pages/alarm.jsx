@@ -54,20 +54,22 @@ class Alarm extends React.Component {
        
         return (
             <div className="alarm-list">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Bus</th>
-                            <th>Bus Stop</th>
-                            <th>On/Off</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            this.state.data.map(this.renderResult)
-                        }
-                    </tbody>
-                </table>
+                <div className="scrollable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Bus</th>
+                                <th>Bus Stop</th>
+                                <th>On/Off</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                this.state.data.map(this.renderResult)
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
     }

@@ -20,7 +20,7 @@ $font_SSS: 2.5vmin;
     	overflow: hidden;
 
 	table {
-		width: 400px;
+		width: 100%;
     	height: 510px;
 	}
 
@@ -63,37 +63,42 @@ $font_SSS: 2.5vmin;
     	width: 28.75%;
     }
 
+    .scrollable {
+        height: 500px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
 
 }
 
 
-@media only screen and (min-width: 320px) {
-	.alarm-list {
-		table{
-			width: 100%;
-			font-size : $font_M;
-		}
-	}
+// @media only screen and (min-width: 320px) {
+// 	.alarm-list {
+// 		table{
+// 			width: 100%;
+// 			font-size : $font_M;
+// 		}
+// 	}
     
-}
+// }
 
- /* media max-width 435px */
-@media only screen and (min-width: 481px) {
-	.alarm-list {
-		table {
-			width: 100%;
-			font-size : $font_S;
-		}
-	}
-}
+//  /* media max-width 435px */
+// @media only screen and (min-width: 481px) {
+// 	.alarm-list {
+// 		table {
+// 			width: 100%;
+// 			font-size : $font_S;
+// 		}
+// 	}
+// }
 
 
- /* media max-width 768px */
-@media only screen and (min-width: 769px) { 
-	.alarm-list {
-		table {
-			width: 768px;
-			font-size : $font_SS;
-		}
-	}
-}
+//  /* media max-width 768px */
+// @media only screen and (min-width: 769px) { 
+// 	.alarm-list {
+// 		table {
+// 			width: 768px;
+// 			font-size : $font_SS;
+// 		}
+// 	}
+// }
