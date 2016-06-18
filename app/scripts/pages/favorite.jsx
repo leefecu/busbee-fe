@@ -11,7 +11,7 @@ class Favorite extends React.Component {
             stopList: []
         }
     }
-    
+
     componentWillMount () {
         const self = this
         fetch('http://localhost:3000/favoriteList')
@@ -19,8 +19,10 @@ class Favorite extends React.Component {
                 return response.text()
             }).then(function(body) {
                 var lists = JSON.parse(body);
-                self.setState({busList: lists[0]['busList']})
-                self.setState({stopList: lists[0]['stopList']})                
+                self.setState({
+                    busList: lists[0]['busList'],
+                    stopList: lists[0]['stopList']
+                })
             }).catch(function(ex) {
                 console.log('Error', ex)
             })
@@ -33,7 +35,7 @@ class Favorite extends React.Component {
                 <td>{ row.target_name }</td>
                 <td>
                 {(() => {
-                    switch (row.type) {                    
+                    switch (row.type) {
                       case "B": return <img src="/images/content/bus_black.png" />;
                       case "S": return <img src="/images/content/stop_black.png" />;
                     }
@@ -78,10 +80,10 @@ class Favorite extends React.Component {
         );
 
     }
-    
+
 };
 
 
 
-    
+
 export default Favorite;
