@@ -29,7 +29,19 @@ class Alarm extends React.Component {
             })
     }
 
-    componentDidMount () {}
+        componentDidMount() {
+//         const self = this
+//         fetch('http://localhost:3000/alarmList')
+//         .then(function(response) {
+//             return setInterval(function() {
+//           console.log(self.state); // fetch must be inside within the function
+//         }, 10000);
+//     }
+// )
+}
+
+
+
 
     componentWillReceivnpeProps () {}
 
