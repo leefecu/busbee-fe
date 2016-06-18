@@ -10,8 +10,9 @@ class SearchResult extends React.Component {
             data: []
         }
     }
-    
+
     componentWillMount () {
+        var searchParam = this.props.params.saerchVal;
         const self = this
         fetch('http://localhost:3000/searchListResult')
             .then(function(response) {

@@ -6,8 +6,8 @@ class App extends React.Component {
     render() {
         return (
             <div className="container">
-                { this.props.location.pathname === '/' ? null : <Header />}
-
+                { this.props.location.pathname === '/' ? null : <Header pathname={this.props.location.pathname} />}
+                
                 <div className="content">
                     {this.props.children}
                 </div>

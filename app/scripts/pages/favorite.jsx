@@ -34,8 +34,8 @@ class Favorite extends React.Component {
                 <td>
                 {(() => {
                     switch (row.type) {                    
-                      case "B": return <img src="/images/content/bus_black.png" />;
-                      case "S": return <img src="/images/content/stop_black.png" />;
+                      case "B": return <img src="/images/content/delete_red.png" />;
+                      case "S": return <img src="/images/content/delete_red.png" />;
                     }
                 })()}
                 </td>
@@ -45,13 +45,13 @@ class Favorite extends React.Component {
 
     render() {
         return (
-            <div className="favorite_01">
+            <div className="favorite">
                 <table>
                     <thead>
                         <tr>
-                            <th>Num</th>
+                            <th>Bus Num</th>
                             <th>Description</th>
-                            <th>B/S</th>
+                            <th>Del</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -60,12 +60,12 @@ class Favorite extends React.Component {
                         }
                     </tbody>
                 </table>
-                 <table>
-                    <thead>
+                 <table >
+                    <thead> 
                         <tr>
-                            <th>Num</th>
+                            <th>Stop Num</th>
                             <th>Description</th>
-                            <th>B/S</th>
+                            <th>Del</th>
                         </tr>
                     </thead>
                     <tbody>
