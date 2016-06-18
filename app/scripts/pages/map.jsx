@@ -10,8 +10,9 @@ class Map extends React.Component {
         super(props)
 
         this.state = {
-            lat: 0,
-  			lng: 0,
+            makerList:[],
+            lat: -36.844276,
+            lng: 174.767695,
   			data: []
         }
     }
@@ -20,20 +21,17 @@ class Map extends React.Component {
         // API.call('givemedata', function(result) {
         //     this.setState({data: result})
         // }), 
-        var lat =  -36.844276;
-  		var lng =  174.767695;
-        this.setState({lat: lat})
-        this.setState({lng: lng})
         const self = this
-        fetch('http://localhost:3000/stops')
+        fetch('http://localhost:3000/nearStopList')
             .then(function(response) {
                 return response.text()
             }).then(function(body) {
                 var lists = JSON.parse(body)
-                self.setState({data: lists})
+                self.setState({makerList: lists})
             }).catch(function(ex) {
                 console.log('Error', ex)
             })
+        
     }
     renderResult(row, index) {
         return (
@@ -62,6 +60,14 @@ class Map extends React.Component {
      console.log('onClick', e);
     }
 
+    makeMaker(row){
+        return(
+            <Marker
+              lat={row.lat}
+              lng={row.lng}
+              draggable={row.draggable}/>
+            )
+    }
     render() {
         return (
 
@@ -78,7 +84,7 @@ class Map extends React.Component {
 	                    </thead>
 	                    <tbody>
 	                        {
-	                            this.state.data.map(this.renderResult)
+	                            this.state.makerList.map(this.renderResult)
 	                        }
 	                    </tbody>
 	                </table>
@@ -93,15 +99,11 @@ class Map extends React.Component {
                 		height={'100vh'}                	    
 				        lat={this.state.lat}
 				        lng={this.state.lng}
-				        zoom={14}
+				        zoom={16}
 				        loadingMessage={'Be happy'}
 				        params={{v: '3.exp', key: 'AIzaSyAnXBKXJ1snb4k5fp_mTAGl64x4UREM6YI'}}
 				        onMapCreated={this.onMapCreated}>
-				        <Marker
-				          lat={this.state.lat}
-				          lng={this.state.lng}
-				          draggable={true}
-				          onDragEnd={this.onDragEnd} />
+                        {this.state.makerList.map(this.makeMaker)}
 				        <InfoWindow
 				          lat={this.state.lat}
 				          lng={this.state.lng}

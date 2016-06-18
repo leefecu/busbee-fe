@@ -33,6 +33,49 @@
             "type" : "B"
         }
     ],
+    "nearStopList": [
+        {
+            "id" : "8874",
+            "num" : "8874",
+            "name" : "15 Albert St, Auckland city",
+            "lat": -36.844278,
+            "lng": 174.767650,
+            "draggable": true
+        },
+        {   
+            "id" : "8873",
+            "num" : "8873",
+            "name" : "Carrington Rd opp Fifth Ave",
+            "lat": -36.845385,
+            "lng": 174.769734,
+            "draggable": true
+        },
+        {   
+            "id" : "8872",
+            "num" : "8872",
+            "name" : "23 Albert St, Auckland city",
+            "lat": -36.845166,
+            "lng": 174.768135,
+            "draggable": true
+        },
+        {   
+            "id" : "8871",
+            "num" : "8871",
+            "name" : "55 Albert St, Auckland city",
+            "lat": -36.846110,
+            "lng": 174.766247,
+            "draggable": true
+        },
+        {
+            "id" : "8870",
+            "num" : "8870",
+            "name" : "33 Albert St, Auckland city",
+            "lat": -36.846475,
+            "lng": 174.764482,
+            "draggable": true
+        }
+        
+    ],
 
     "alarmList": [
         {
