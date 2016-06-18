@@ -18,20 +18,86 @@
     ],
 
     "searchListResult": [{"id":"0277","num":"277","name":"Grafton Train Station","type":"S"},{"id":"2277","num":"2277","name":"Greenmeadows Intermediate","type":"S"},{"id":"8277","num":"8277","name":"225 New Windsor Rd","type":"S"},{"id":"3277","num":"3277","name":"57 Anzac St","type":"S"},{"id":"5277","num":"5277","name":"3 Beaubank Rd","type":"S"},{"id":"4277","num":"4277","name":"1422 Whangaparaoa Rd","type":"S"},{"id":"6277","num":"6277","name":"1 Granger Rd","type":"S"},{"id":"27702-20160512154122_v40.34","num":"277","name":"Britomart To Waikowhai","type":"B"},{"id":"27701-20160512154122_v40.34","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27701-20160518153157_v41.13","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27702-20160518153157_v41.13","num":"277","name":"Britomart To Waikowhai","type":"B"}],
-
-    "stops": [
+    
+    "favoriteList": [
+        {
+            "stopList": [
+                {
+                    "id":2,
+                    "user_id":"user01",
+                    "description":"1",
+                    "type":"S",
+                    "target_id":"1",
+                    "target_name":"1",
+                    "created_at":"2016-06-17 01:44:03",
+                    "updated_at":"2016-06-17 01:44:03"},
+                {
+                    "id":3,
+                    "user_id":"user01",
+                    "description":"2",
+                    "type":"S",
+                    "target_id":"1",
+                    "target_name":"1",
+                    "created_at":"2016-06-17 01:44:53",
+                    "updated_at":"2016-06-17 01:44:53"
+                }
+            ],
+            "busList": [
+                {
+                    "id":4,
+                    "user_id":"user01",
+                    "description":"3",
+                    "type":"B",
+                    "target_id":"1",
+                    "target_name":"1",
+                    "created_at":"2016-06-17 01:45:05",
+                    "updated_at":"2016-06-17 01:45:05"
+                }
+            ]
+        }
+    ],
+    "nearStopList": [
         {
             "id" : "8874",
             "num" : "8874",
             "name" : "15 Albert St, Auckland city",
-            "type" : "B"
+            "lat": -36.844278,
+            "lng": 174.767650,
+            "draggable": true
+        },
+        {   
+            "id" : "8873",
+            "num" : "8873",
+            "name" : "Carrington Rd opp Fifth Ave",
+            "lat": -36.845385,
+            "lng": 174.769734,
+            "draggable": true
+        },
+        {   
+            "id" : "8872",
+            "num" : "8872",
+            "name" : "23 Albert St, Auckland city",
+            "lat": -36.845166,
+            "lng": 174.768135,
+            "draggable": true
+        },
+        {   
+            "id" : "8871",
+            "num" : "8871",
+            "name" : "55 Albert St, Auckland city",
+            "lat": -36.846110,
+            "lng": 174.766247,
+            "draggable": true
         },
         {
-            "id" : "8879",
-            "num" : "8879",
-            "name" : "Carrington Rd opp Fifth Ave",
-            "type" : "B"
+            "id" : "8870",
+            "num" : "8870",
+            "name" : "33 Albert St, Auckland city",
+            "lat": -36.846475,
+            "lng": 174.764482,
+            "draggable": true
         }
+        
     ],
 
     "alarmList": [
