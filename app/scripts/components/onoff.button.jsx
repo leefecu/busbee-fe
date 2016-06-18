@@ -2,13 +2,11 @@ import React from 'react';
 
 
 class onOffButton extends React.Component {
-    // getChecked (checkedState) {
-    //     console.log(checkedState);
-    // }
 
-    getChecked(alarmId) {
-        console.log(alarmId);
-    }
+
+     getChecked(alarmId) {
+         console.log(alarmId);
+     }
 
 
     render() {
