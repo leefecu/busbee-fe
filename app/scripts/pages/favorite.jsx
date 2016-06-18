@@ -7,18 +7,22 @@ class Favorite extends React.Component {
         super(props)
 
         this.state = {
-            data: []
+            busList: [],
+            stopList: []
         }
     }
-    
+
     componentWillMount () {
         const self = this
-        fetch('http://localhost:3000/searchListResult')
+        fetch('http://localhost:3000/favoriteList')
             .then(function(response) {
                 return response.text()
             }).then(function(body) {
-                var lists = JSON.parse(body)
-                self.setState({data: lists})
+                var lists = JSON.parse(body);
+                self.setState({
+                    busList: lists[0]['busList'],
+                    stopList: lists[0]['stopList']
+                })
             }).catch(function(ex) {
                 console.log('Error', ex)
             })
@@ -27,11 +31,11 @@ class Favorite extends React.Component {
     renderFavorite(row, index) {
         return (
             <tr key={index}>
-                <td>{ row.num }</td>
-                <td>{ row.name }</td>
+                <td>{ row.target_id }</td>
+                <td>{ row.target_name }</td>
                 <td>
                 {(() => {
-                    switch (row.type) {                    
+                    switch (row.type) {
                       case "B": return <img src="/images/content/bus_black.png" />;
                       case "S": return <img src="/images/content/stop_black.png" />;
                     }
@@ -54,7 +58,7 @@ class Favorite extends React.Component {
                     </thead>
                     <tbody>
                         {
-                            this.state.data.map(this.renderFavorite)
+                            this.state.busList.map(this.renderFavorite)
                         }
                     </tbody>
                 </table>
@@ -68,7 +72,7 @@ class Favorite extends React.Component {
                     </thead>
                     <tbody>
                         {
-                            this.state.data.map(this.renderFavorite)
+                            this.state.stopList.map(this.renderFavorite)
                         }
                     </tbody>
                 </table>
@@ -76,10 +80,10 @@ class Favorite extends React.Component {
         );
 
     }
-    
+
 };
 
 
 
-    
+
 export default Favorite;
