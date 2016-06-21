@@ -16,7 +16,9 @@ class Map extends React.Component {
   			data: []
         }
     }
+    componentDidMount (){
 
+    }
     componentWillMount () {
         // API.call('givemedata', function(result) {
         //     this.setState({data: result})
@@ -94,7 +96,6 @@ class Map extends React.Component {
 			    <div tabTitle="Map">
 			      <div class="googlemap" >
                 	<Gmaps
-
                 		width={'100%'}
                 		height={'100vh'}                	    
 				        lat={this.state.lat}

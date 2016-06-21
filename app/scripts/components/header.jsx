@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 class Header extends React.Component {
 
     checkPathName(){
-        console.log("111111");
         if(this.props.pathname === '/search'){
             return ( 
                     <ul className="search">
