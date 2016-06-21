@@ -25,7 +25,7 @@ class App extends React.Component {
         var contentH = windowH - (headerH+footerH);
         //set content height size
         document.getElementById("cont").style.height = contentH+"px"; 
-        console.log("set content Height")
+
     }
 
     render() {
