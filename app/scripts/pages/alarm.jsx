@@ -30,15 +30,12 @@ class Alarm extends React.Component {
     }
 
         componentDidMount() {
-//         const self = this
-//         fetch('http://localhost:3000/alarmList')
-//         .then(function(response) {
-//             return setInterval(function() {
-//           console.log(self.state); // fetch must be inside within the function
-//         }, 10000);
-//     }
-// )
-}
+            const self = this
+                setInterval(function() {
+                        console.log(self.state.data[0].user_id);
+                     }, 3000);
+                }
+            
 
 
 
@@ -51,16 +48,21 @@ class Alarm extends React.Component {
 
     componentWillUnmount () {}
 
+
+
+
     renderResult(row, index) {
+
         return (
             <tr key={index}>
-                <td>{ row.num }</td>
-                <td>{ row.stop }</td>
-                <td><OnOffButton alarmId={row.id} alarmType={row.type} /></td>
-
+                <td>{ row.route_id }</td>
+                <td>{ row.stop_id } {" - "} { row.short_name }</td>
+                <td><OnOffButton alarmId={row.id} alarmType={row.on_off} verifyType={row.type}/></td>
             </tr>
         )
     }
+
+
 
     render() {
        
@@ -85,7 +87,6 @@ class Alarm extends React.Component {
             </div>
         );
     }
-
 };
     
 export default Alarm;
