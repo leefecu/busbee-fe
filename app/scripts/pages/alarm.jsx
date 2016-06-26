@@ -29,14 +29,26 @@ class Alarm extends React.Component {
             })
     }
 
-        componentDidMount() {
-            const self = this
-                setInterval(function() {
-                        console.log(self.state.data[0].user_id);
-                     }, 3000);
-                }
-            
+/*        componentDidMount() {
+                if session != null{
+                var user = session.useId;//"user01" 
+                const self = this
+                    setInterval(function() {
+                            fetch('http://localhost:3000/alarmResult')
+                            .then(function(response) {
+                                return response.text()
+                            }).then(function(body) {
+                                
 
+
+                            }).catch(function(ex) {
+                                console.log('Error', ex)
+                            })
+                         }, 3000);   
+                }
+            }*/
+            
+    componentDidMount() {}
 
 
 
@@ -57,7 +69,7 @@ class Alarm extends React.Component {
             <tr key={index}>
                 <td>{ row.route_id }</td>
                 <td>{ row.stop_id } {" - "} { row.short_name }</td>
-                <td><OnOffButton alarmId={row.id} alarmType={row.on_off} verifyType={row.type}/></td>
+                <td><OnOffButton alarmId={row.id} alarmType={row.on_off}/></td>
             </tr>
         )
     }

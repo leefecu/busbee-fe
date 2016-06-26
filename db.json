@@ -108,16 +108,14 @@
             "stop_id" : "2475",
             "short_name" : "Constellation",
             "route_id" : "887",
-            "on_off" : "Y",
-            "type" : true
+            "on_off" : "Y"
         },
         {
             "id" : "2",
             "stop_id" : "2475",
             "short_name" : "Constellation",
             "route_id" : "887",
-            "on_off" : "Y",
-            "type" : true
+            "on_off" : "Y"
                  
         },  
         {
@@ -125,16 +123,14 @@
             "stop_id" : "656",
             "short_name" : "Highbury Shop",
             "route_id" : "973",
-            "on_off" : "N",
-            "type" : false
+            "on_off" : "N"
         },
         {
             "id" : "4",
             "stop_id" : "2475",
             "short_name" : "Constellation",
             "route_id" : "887",
-            "on_off" : "Y",
-            "type" : true
+            "on_off" : "Y"
         
         },     
         {
@@ -142,25 +138,32 @@
             "stop_id" : "656",
             "short_name" : "Highbury Shop",
             "route_id" : "973",
-            "on_off" : "N",
-            "type" : false
+            "on_off" : "N"
         },
         {
             "id" : "6",
             "stop_id" : "2475",
             "short_name" : "Constellation",
             "route_id" : "887",
-            "on_off" : "Y",
-            "type" : true
+            "on_off" : "Y"
         },
         {
             "id" : "7",
             "stop_id" : "656",
             "short_name" : "Highbury Shop",
             "route_id" : "973",
-            "on_off" : "N",
-            "type" : false
+            "on_off" : "N"
         }
       
+    ],
+    "alarmResult" : [
+        {
+            "bus_num" : "277",
+            "arrive_time" : "11:30"
+        },
+        {
+            "bus_num" : "274",
+            "arrive_time" : "11:32"
+        }
     ]
 }

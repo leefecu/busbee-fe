@@ -4,25 +4,24 @@ import React from 'react';
 class onOffButton extends React.Component {
 
     getChecked(alarmId) {
-         console.log(alarmId);
+         
      }
 
     getMessage(e) {
-        if(e === true) {
-            console.log(e);
-            alert("alarm is Off!");
-        } else {
+        
+/*        if(e === 'Y') {
             console.log(e);
             alert("alarm is On!");
-        }
+        } else {
+            console.log(e);
+            alert("alarm is Off!");
+        }*/
         
     }
 
 
 
     render() {
-
-   
 
 
             return (
@@ -32,7 +31,7 @@ class onOffButton extends React.Component {
                     id={ this.props.alarmId } 
                     defaultChecked={ this.props.alarmType === "Y" ? true : null}
                     onChange={ this.getChecked(this.props.alarmId) } 
-                    onClick={ this.getMessage.bind(this, this.props.verifyType)} />
+                    onClick={ this.getMessage.bind(this, this.props.alarmType)} />
                   
 
                     <label className="onoffswitch-label" htmlFor={ this.props.alarmId }>
