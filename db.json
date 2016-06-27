@@ -36,8 +36,8 @@
                     "user_id":"user01",
                     "description":"2",
                     "type":"S",
-                    "target_id":"1",
-                    "target_name":"1",
+                    "target_id":"2",
+                    "target_name":"2",
                     "created_at":"2016-06-17 01:44:53",
                     "updated_at":"2016-06-17 01:44:53"
                 }
