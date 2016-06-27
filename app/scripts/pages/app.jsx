@@ -29,8 +29,8 @@ class App extends React.Component {
                     return response.text()
                 }).then(function(body) {
                    var lists = JSON.parse(body)
-                   console.log(lists)
-                   
+                   console.log(lists[0])
+                   console.log(lists[1])
                 }).catch(function(ex) {
                     console.log('Error', ex)
                 })

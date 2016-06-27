@@ -9,13 +9,13 @@ class onOffButton extends React.Component {
 
     getMessage(e) {
         
-/*        if(e === 'Y') {
+    /*  if(e === 'Y') {
             console.log(e);
             alert("alarm is On!");
         } else {
             console.log(e);
             alert("alarm is Off!");
-        }*/
+        }   */
         
     }
 
