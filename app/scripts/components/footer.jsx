@@ -48,7 +48,7 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <footer>
+            <footer id='ft'>
                  <ul>
                     <li>
                         <Link to="/">
