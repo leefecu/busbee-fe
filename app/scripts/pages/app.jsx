@@ -25,13 +25,12 @@ class App extends React.Component {
         var contentH = windowH - (headerH+footerH);
         //set content height size
         document.getElementById("cont").style.height = contentH+"px"; 
-
     }
 
     render() {
         return (
             <div className="container">
-                { this.props.location.pathname === '/' ? null : <Header pathname={this.props.location.pathname} />}
+                { this.props.location.pathname === '/' ? null : <Header pathname={this.props.location.pathname} pathRouteName={this.props.routes[1].name}/>}
 
                 <div className="content" id="cont">
                     {this.props.children}
