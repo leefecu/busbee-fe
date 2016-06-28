@@ -7,20 +7,22 @@
 $font_L: 6.9vw;
 $font_M: 4.1vw;
 $font_S: 3.7vw;
-$font_SS: 2.8vw;
-$font_SSS: 2.5vmin;
+$font_SS: 3.1vw;
+$font_SSS: 1.8vw;
 
 
-@include fontFace('Futura Md Bt', 'font/FutuBd');
+@font-face {
+    font-family: FutuMd;
+    src: url('/css/font/FutuMd.ttf');
+    font-family: FutuBd;
+    src: url('/css/font/FutuBd.ttf');
+}
 
-.alarm-list {
-
-  		font-family: 'Futura Md Bt';    
-    	font-size : $font_SS;
-    	overflow: hidden;
+.alarm-list {   
+    
 
 	table {
-		width: 400px;
+		width: 100%;
     	height: 510px;
 	}
 
@@ -35,6 +37,11 @@ $font_SSS: 2.5vmin;
         border-spacing: 0;
         margin: 0;
         padding: 0;
+        font-family: 'FutuMd','Helvetica';
+        font-weight: bold;
+        td {
+            padding: 10px 0 ;
+        }
     }
             
 
@@ -43,8 +50,6 @@ $font_SSS: 2.5vmin;
         background-color: $lightgray;
         height: 35px;
         border-bottom: 1px solid #c3c3c3;
-		
-
     }
 
     th:nth-child(1) {
@@ -63,37 +68,45 @@ $font_SSS: 2.5vmin;
     	width: 28.75%;
     }
 
+    .scrollable {
+        height: 100%;
+        overflow-y:scroll;
+        overflow-x:hidden;
+    }
 
 }
 
 
 @media only screen and (min-width: 320px) {
-	.alarm-list {
-		table{
-			width: 100%;
-			font-size : $font_M;
-		}
-	}
-    
+    	.alarm-list {
+    		table {
+    			font-size: $font_M;
+    		}
+        .scrollable {
+            height: 500px;
+        }
+    }
 }
 
- /* media max-width 435px */
+
 @media only screen and (min-width: 481px) {
-	.alarm-list {
-		table {
-			width: 100%;
-			font-size : $font_S;
-		}
-	}
+    	.alarm-list {
+    		table {
+    			font-size: $font_SS;
+    		}
+        .scrollable {
+            height: 490px;
+        }
+
+    }
 }
 
 
- /* media max-width 768px */
-@media only screen and (min-width: 769px) { 
-	.alarm-list {
-		table {
-			width: 768px;
-			font-size : $font_SS;
-		}
+
+@media only screen and (min-width: 769px){ 
+    	.alarm-list {
+    		table {
+    		  font-size: $font_SSS;
+    		}
 	}
 }

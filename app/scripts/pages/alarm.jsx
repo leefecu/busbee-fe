@@ -29,7 +29,19 @@ class Alarm extends React.Component {
             })
     }
 
-    componentDidMount () {}
+        componentDidMount() {
+//         const self = this
+//         fetch('http://localhost:3000/alarmList')
+//         .then(function(response) {
+//             return setInterval(function() {
+//           console.log(self.state); // fetch must be inside within the function
+//         }, 10000);
+//     }
+// )
+}
+
+
+
 
     componentWillReceivnpeProps () {}
 
@@ -54,20 +66,22 @@ class Alarm extends React.Component {
        
         return (
             <div className="alarm-list">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Bus</th>
-                            <th>Bus Stop</th>
-                            <th>On/Off</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            this.state.data.map(this.renderResult)
-                        }
-                    </tbody>
-                </table>
+                <div className="scrollable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Bus</th>
+                                <th>Bus Stop</th>
+                                <th>On/Off</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                this.state.data.map(this.renderResult)
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         );
     }

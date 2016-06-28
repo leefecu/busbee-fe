@@ -1,77 +1,354 @@
 {
 
-    "lists": [
-        {
-            "id" : "27701-20160404114523_v39.23",
-            "num" : "887",
-            "name" : "constellation",
-            "arr_time" : "13:48",
-            "stops" : 5
-        }, 
-        {
-            "id" : "27701-20160404114523_v40.23",
-            "num" : "987",
-            "name" : "Glenfield mall",  
-            "arr_time" : "13:41",
-            "stops" : 2
-        }
+    "lists": [{
+        "id": "27701-20160404114523_v39.23",
+        "num": "887",
+        "name": "constellation",
+        "arr_time": "13:48",
+        "stops": 5
+    }, {
+        "id": "27701-20160404114523_v40.23",
+        "num": "987",
+        "name": "Glenfield mall",
+        "arr_time": "13:41",
+        "stops": 2
+    }],
+
+    "searchListResult": [{ "id": "0277", "num": "277", "name": "Grafton Train Station", "type": "S" }, { "id": "2277", "num": "2277", "name": "Greenmeadows Intermediate", "type": "S" }, { "id": "8277", "num": "8277", "name": "225 New Windsor Rd", "type": "S" }, { "id": "3277", "num": "3277", "name": "57 Anzac St", "type": "S" }, { "id": "5277", "num": "5277", "name": "3 Beaubank Rd", "type": "S" }, { "id": "4277", "num": "4277", "name": "1422 Whangaparaoa Rd", "type": "S" }, { "id": "6277", "num": "6277", "name": "1 Granger Rd", "type": "S" }, { "id": "27702-20160512154122_v40.34", "num": "277", "name": "Britomart To Waikowhai", "type": "B" }, { "id": "27701-20160512154122_v40.34", "num": "277", "name": "Waikowhai To Britomart", "type": "B" }, { "id": "27701-20160518153157_v41.13", "num": "277", "name": "Waikowhai To Britomart", "type": "B" }, { "id": "27702-20160518153157_v41.13", "num": "277", "name": "Britomart To Waikowhai", "type": "B" }],
+    "StopResult": [
+        { "trip_id": "6009021229-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:21:36" },
+        { "trip_id": "14277032140-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "16:07:18" },
+        { "trip_id": "14277032174-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:21:09" },
+        { "trip_id": "14277032235-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:11" },
+        { "trip_id": "14277032174-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:21:09" },
+        { "trip_id": "14277032234-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:16:11" },
+        { "trip_id": "14277032175-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:51:09" },
+        { "trip_id": "14277032236-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:56:11" },
+        { "trip_id": "14277032175-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:51:09" },
+        { "trip_id": "14277032139-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:23" },
+        { "trip_id": "14277032236-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:56:11" },
+        { "trip_id": "14277032140-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "16:07:18" },
+        { "trip_id": "14277032235-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:11" },
+        { "trip_id": "6009021235-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:51:06" },
+        { "trip_id": "6009021235-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:51:06" },
+        { "trip_id": "6009015156-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:50:16" },
+        { "trip_id": "6009015167-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:10:18" },
+        { "trip_id": "14277032139-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:23" },
+        { "trip_id": "6009015167-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:10:18" },
+        { "trip_id": "6009015146-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:20:16" },
+        { "trip_id": "14277032234-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:16:11" },
+        { "trip_id": "6009015146-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:20:16" },
+        { "trip_id": "6009015156-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:50:16" },
+        { "trip_id": "6009021229-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:21:36" }
     ],
 
     "searchListResult": [{"id":"0277","num":"277","name":"Grafton Train Station","type":"S"},{"id":"2277","num":"2277","name":"Greenmeadows Intermediate","type":"S"},{"id":"8277","num":"8277","name":"225 New Windsor Rd","type":"S"},{"id":"3277","num":"3277","name":"57 Anzac St","type":"S"},{"id":"5277","num":"5277","name":"3 Beaubank Rd","type":"S"},{"id":"4277","num":"4277","name":"1422 Whangaparaoa Rd","type":"S"},{"id":"6277","num":"6277","name":"1 Granger Rd","type":"S"},{"id":"27702-20160512154122_v40.34","num":"277","name":"Britomart To Waikowhai","type":"B"},{"id":"27701-20160512154122_v40.34","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27701-20160518153157_v41.13","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27702-20160518153157_v41.13","num":"277","name":"Britomart To Waikowhai","type":"B"}],
-
-    "stops": [
+    
+    "favoriteList": [
+        {
+            "stopList": [
+                {
+                    "id":2,
+                    "user_id":"user01",
+                    "description":"1",
+                    "type":"S",
+                    "target_id":"1",
+                    "target_name":"1",
+                    "created_at":"2016-06-17 01:44:03",
+                    "updated_at":"2016-06-17 01:44:03"},
+                {
+                    "id":3,
+                    "user_id":"user01",
+                    "description":"2",
+                    "type":"S",
+                    "target_id":"2",
+                    "target_name":"2",
+                    "created_at":"2016-06-17 01:44:53",
+                    "updated_at":"2016-06-17 01:44:53"
+                }
+            ],
+            "busList": [
+                {
+                    "id":4,
+                    "user_id":"user01",
+                    "description":"3",
+                    "type":"B",
+                    "target_id":"1",
+                    "target_name":"1",
+                    "created_at":"2016-06-17 01:45:05",
+                    "updated_at":"2016-06-17 01:45:05"
+                }
+            ]
+        }
+    ],
+    "nearStopList": [
         {
             "id" : "8874",
             "num" : "8874",
             "name" : "15 Albert St, Auckland city",
-            "type" : "B"
-        },
-        {
-            "id" : "8879",
-            "num" : "8879",
-            "name" : "Carrington Rd opp Fifth Ave",
-            "type" : "B"
+
+            "lat": -36.844278,
+            "lng": 174.767650,
+            "draggable": true
+        }, {
+            "id": "8873",
+            "num": "8873",
+            "name": "Carrington Rd opp Fifth Ave",
+            "lat": -36.845385,
+            "lng": 174.769734,
+            "draggable": true
+        }, {
+            "id": "8872",
+            "num": "8872",
+            "name": "23 Albert St, Auckland city",
+            "lat": -36.845166,
+            "lng": 174.768135,
+            "draggable": true
+        }, {
+            "id": "8871",
+            "num": "8871",
+            "name": "55 Albert St, Auckland city",
+            "lat": -36.846110,
+            "lng": 174.766247,
+            "draggable": true
+        }, {
+            "id": "8870",
+            "num": "8870",
+            "name": "33 Albert St, Auckland city",
+            "lat": -36.846475,
+            "lng": 174.764482,
+            "draggable": true
         }
+
     ],
 
-    "alarmList": [
-        {
-            "id" : "1",
-            "num" : "887",
-            "stop" : "2475 - Constellation",
-            "type" : "N"
-            
+    "alarmList": [{
+            "id": "1",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
         },
 
         {
-            "id" : "2",
-            "num" : "887",
-            "stop" : "2475 - Constellation",
-            "type" : "N"
-            
+            "id": "2",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
         },
 
         {
-            "id" : "3",
-            "num" : "656",
-            "stop" : "4334 - Highbury Shop",
-            "type" : "Y"
-            
+            "id": "3",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+
         },
 
         {
-            "id" : "4",
-            "num" : "887",
-            "stop" : "2475 - Constellation",
-            "type" : "N"
+            "id": "4",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
         },
 
         {
-            "id" : "5",
-            "num" : "656",
-            "stop" : "4334 - Highbury Shop",
-            "type" : "Y"
+            "id": "5",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+        }, {
+            "id": "6",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "7",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "8",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+
+        },
+
+        {
+            "id": "9",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+        },
+
+        {
+            "id": "10",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+        },
+
+        {
+            "id": "11",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "12",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "13",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+
+        },
+
+        {
+            "id": "14",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+        },
+
+
+        {
+            "id": "16",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "17",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "18",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+
+        },
+
+        {
+            "id": "19",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+        },
+
+        {
+            "id": "20",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+        },
+
+        {
+            "id": "21",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "22",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "23",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+
+        },
+
+        {
+            "id": "24",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+        },
+
+        {
+            "id": "25",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+        },
+
+        {
+            "id": "26",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+        },
+
+        {
+            "id": "27",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "28",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+
+        },
+
+        {
+            "id": "29",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
+
+        },
+
+        {
+            "id": "30",
+            "num": "887",
+            "stop": "2475 - Constellation",
+            "type": "N"
+        },
+
+        {
+            "id": "31",
+            "num": "656",
+            "stop": "4334 - Highbury Shop",
+            "type": "Y"
         }
+
 
     ],
 
@@ -157,3 +434,4 @@
      ]
 
 }
+
