@@ -100,8 +100,12 @@
             "position":null,
             "the_geom":"0101000020E6100000350708E6E8D765403D2CD49AE67542C0",
             "created_at":"2016-06-18 03:37:48",
-            "updated_at":"2016-06-18 03:37:48"},
-            {"stop_id":"8953",
+            "updated_at":"2016-06-18 03:37:48"
+        },
+
+
+        {   
+            "stop_id":"8953",
             "stop_name":"19 Oakdale Rd",
             "stop_desc":null,
             "stop_lat":"-36.91896",
@@ -122,8 +126,12 @@
             "position":null,
             "the_geom":"0101000020E610000084F57F0EF3D76540842A357BA07542C0",
             "created_at":"2016-06-18 03:37:48",
-            "updated_at":"2016-06-18 03:37:48"},
-            {"stop_id":"8955",
+            "updated_at":"2016-06-18 03:37:48"
+        },
+
+
+        {
+            "stop_id":"8955",
             "stop_name":"3 Oakdale Rd",
             "stop_desc":null,
             "stop_lat":"-36.91773",
@@ -144,6 +152,8 @@
             "position":null,
             "the_geom":"0101000020E610000010CCD1E3F7D765406F47382D787542C0",
             "created_at":"2016-06-18 03:37:48",
-            "updated_at":"2016-06-18 03:37:48"}]
-            
+            "updated_at":"2016-06-18 03:37:48"
+        }
+     ]
+
 }
