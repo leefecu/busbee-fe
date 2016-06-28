@@ -5,6 +5,7 @@ import createHistory from 'history/lib/createHashHistory';
 import App from './pages/app.jsx';
 import Home from './pages/home.jsx';
 import SearchResult from './pages/search.result.jsx';
+import StopResult from './pages/stop.result.jsx';
 import Map from './pages/map.jsx';
 import Favorite from './pages/favorite.jsx';
 import NotFound from './pages/notFound.jsx';
@@ -22,6 +23,7 @@ const routes = (
       <Route path="search/:saerchVal" component={SearchResult}/>
       <Route path='alarm' component= { Alarm }/>
       <Route path='map' component={ Map } />
+      <Route path='stop.result' component={ StopResult } />
       <Route path='favorite' component={ Favorite } />
       <Route path='*' component={NotFound}/>
     </Route>
