@@ -4,12 +4,13 @@ import { Link } from 'react-router';
 class Header extends React.Component {
 
     checkPathName(){
-        console.log("111111");
-        if(this.props.pathname === '/search'){
+
+        if(this.props.pathname.indexOf('/search/') > -1){
             return ( 
                     <ul className="search">
                         <li>
-                        <img className="back" src="/images/top/arrows_white.png" /></li>
+                        { this.props.pathRouteName === 'dashboard-child' ? <img className="back" src="/images/top/arrows_white.png" /> : ""}
+                        </li>
                         <li><input type="text" className="searchBar" /></li>
                         <li><img className="search" src="/images/top/search_white.png" /></li>
                     </ul>
@@ -19,7 +20,8 @@ class Header extends React.Component {
             return (
                 <ul className="favorite">
                         <li>
-                        <img className="back" src="/images/top/arrows_black.png" /></li>
+                        { this.props.pathRouteName === 'dashboard-child' ? <img className="back" src="/images/top/arrows_white.png" /> : ""}
+                        </li>
                         <li className="favoriteText">Favourite List</li>
                         <li><img className="bus" src="/images/content/bus_white.png" /></li>
                         <li><img className="stop" src="/images/content/stop_black.png" /></li>
@@ -31,8 +33,9 @@ class Header extends React.Component {
         } else if (this.props.pathname === '/alarm'){
             return (
                 <ul className="alarm">
-                        <li>
-                        <img className="back" src="/images/top/arrows_black.png" /></li>
+                    <li>
+                    { this.props.pathRouteName === 'dashboard-child' ? <img className="back" src="/images/top/arrows_white.png" /> : ""}
+                    </li>
                         <li className="alarmText">Alarm Set List</li>
                         <li><img className="bin" src="/images/top/bin_black.png" /></li>
                  </ul>
@@ -43,10 +46,11 @@ class Header extends React.Component {
             return (
                 <ul className="map">
                        <li>
-                        <img className="back" src="/images/top/arrows_white.png" /></li>
+                        { this.props.pathRouteName === 'dashboard-child' ? <img className="back" src="/images/top/arrows_white.png" /> : ""}
+                        </li>
                         <li><input type="text" className="searchBar" /></li>
                         <li><img className="search" src="/images/top/search_white.png" /></li>
-                       </ul>
+                </ul>
 
                 )
 
