@@ -29,25 +29,7 @@ class Alarm extends React.Component {
             })
     }
 
-/*        componentDidMount() {
-                if session != null{
-                var user = session.useId;//"user01" 
-                const self = this
-                    setInterval(function() {
-                            fetch('http://localhost:3000/alarmResult')
-                            .then(function(response) {
-                                return response.text()
-                            }).then(function(body) {
-                                
 
-
-                            }).catch(function(ex) {
-                                console.log('Error', ex)
-                            })
-                         }, 3000);   
-                }
-            }*/
-            
     componentDidMount() {}
 
 

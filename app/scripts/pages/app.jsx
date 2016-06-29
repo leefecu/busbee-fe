@@ -21,7 +21,7 @@ class App extends React.Component {
 
     componentDidMount() {
 
-    if (this.state.userId === "user01" || session !== anyUserId) { // session hasn't been made yet
+    if (this.state.userId === "user01") {
         const self = this
             setInterval(function() {
                 fetch('http://localhost:3000/alarmResult')
@@ -30,7 +30,7 @@ class App extends React.Component {
                 }).then(function(body) {
                    var lists = JSON.parse(body)
                    console.log(lists[0])
-                   console.log(lists[1])
+                   console.log(navigator.vibrate(3000)) // Phone vibration supported by HTML5)
                 }).catch(function(ex) {
                     console.log('Error', ex)
                 })
@@ -39,7 +39,10 @@ class App extends React.Component {
     } else {
         console.log("You are not Logged in")
     }
+
+
 }
+   
 
 
 

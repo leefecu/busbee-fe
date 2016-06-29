@@ -157,13 +157,30 @@
       
     ],
     "alarmResult" : [
-        {
-            "bus_num" : "277",
-            "arrive_time" : "11:30"
-        },
-        {
-            "bus_num" : "274",
-            "arrive_time" : "11:32"
-        }
+            {
+                "user_id" : "user01",
+                "alarm_data" : [
+                    {
+                         "bus_num" : "274",
+                         "arrive_time" : "11:32"
+                    },
+
+                    {
+                         "bus_num" : "975",
+                         "arrive_time" : "11:37"
+                    }
+                ]
+            },
+
+            {
+                "user_id" : "user02",
+                "alarm_data" : [
+                    {
+                         "bus_num" : null,
+                         "arrive_time" : null
+                    }
+                ]
+            }
+
     ]
 }
