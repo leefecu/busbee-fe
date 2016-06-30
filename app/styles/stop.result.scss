@@ -1,0 +1,14 @@
+/* import */
+@import "import/variables";
+@import "import/fontface";
+@import "import/_mixins";
+
+/* common */
+
+@font-face {
+    font-family: FutuMd;
+    src: url('/css/font/FutuMd.ttf');
+    font-family: FutuBd;
+    src: url('/css/font/FutuBd.ttf');
+}
+

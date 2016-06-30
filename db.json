@@ -1,20 +1,45 @@
 {
 
-    "lists": [
-        {
-            "id" : "27701-20160404114523_v39.23",
-            "num" : "887",
-            "name" : "constellation",
-            "arr_time" : "13:48",
-            "stops" : 5
-        }, 
-        {
-            "id" : "27701-20160404114523_v40.23",
-            "num" : "987",
-            "name" : "Glenfield mall",  
-            "arr_time" : "13:41",
-            "stops" : 2
-        }
+    "lists": [{
+        "id": "27701-20160404114523_v39.23",
+        "num": "887",
+        "name": "constellation",
+        "arr_time": "13:48",
+        "stops": 5
+    }, {
+        "id": "27701-20160404114523_v40.23",
+        "num": "987",
+        "name": "Glenfield mall",
+        "arr_time": "13:41",
+        "stops": 2
+    }],
+
+    "searchListResult": [{ "id": "0277", "num": "277", "name": "Grafton Train Station", "type": "S" }, { "id": "2277", "num": "2277", "name": "Greenmeadows Intermediate", "type": "S" }, { "id": "8277", "num": "8277", "name": "225 New Windsor Rd", "type": "S" }, { "id": "3277", "num": "3277", "name": "57 Anzac St", "type": "S" }, { "id": "5277", "num": "5277", "name": "3 Beaubank Rd", "type": "S" }, { "id": "4277", "num": "4277", "name": "1422 Whangaparaoa Rd", "type": "S" }, { "id": "6277", "num": "6277", "name": "1 Granger Rd", "type": "S" }, { "id": "27702-20160512154122_v40.34", "num": "277", "name": "Britomart To Waikowhai", "type": "B" }, { "id": "27701-20160512154122_v40.34", "num": "277", "name": "Waikowhai To Britomart", "type": "B" }, { "id": "27701-20160518153157_v41.13", "num": "277", "name": "Waikowhai To Britomart", "type": "B" }, { "id": "27702-20160518153157_v41.13", "num": "277", "name": "Britomart To Waikowhai", "type": "B" }],
+    "StopResult": [
+        { "trip_id": "6009021229-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:21:36" },
+        { "trip_id": "14277032140-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "16:07:18" },
+        { "trip_id": "14277032174-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:21:09" },
+        { "trip_id": "14277032235-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:11" },
+        { "trip_id": "14277032174-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:21:09" },
+        { "trip_id": "14277032234-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:16:11" },
+        { "trip_id": "14277032175-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:51:09" },
+        { "trip_id": "14277032236-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:56:11" },
+        { "trip_id": "14277032175-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:51:09" },
+        { "trip_id": "14277032139-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:23" },
+        { "trip_id": "14277032236-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:56:11" },
+        { "trip_id": "14277032140-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "16:07:18" },
+        { "trip_id": "14277032235-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:11" },
+        { "trip_id": "6009021235-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:51:06" },
+        { "trip_id": "6009021235-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:51:06" },
+        { "trip_id": "6009015156-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:50:16" },
+        { "trip_id": "6009015167-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:10:18" },
+        { "trip_id": "14277032139-20160609101014_v41.36", "route_id": "27701-20160609101014_v41.36", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:36:23" },
+        { "trip_id": "6009015167-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:10:18" },
+        { "trip_id": "6009015146-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:20:16" },
+        { "trip_id": "14277032234-20160622152022_v42.15", "route_id": "27701-20160622152022_v42.15", "num": "277", "name": "Waikowhai To Britomart", "arr_time": "15:16:11" },
+        { "trip_id": "6009015146-20160622152022_v42.15", "route_id": "00906-20160622152022_v42.15", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:20:16" },
+        { "trip_id": "6009015156-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:50:16" },
+        { "trip_id": "6009021229-20160609101014_v41.36", "route_id": "00906-20160609101014_v41.36", "num": "009", "name": "New Lynn To Sylvia Park Via Blockhouse Bay Shops", "arr_time": "15:21:36" }
     ],
 
     "searchListResult": [{"id":"0277","num":"277","name":"Grafton Train Station","type":"S"},{"id":"2277","num":"2277","name":"Greenmeadows Intermediate","type":"S"},{"id":"8277","num":"8277","name":"225 New Windsor Rd","type":"S"},{"id":"3277","num":"3277","name":"57 Anzac St","type":"S"},{"id":"5277","num":"5277","name":"3 Beaubank Rd","type":"S"},{"id":"4277","num":"4277","name":"1422 Whangaparaoa Rd","type":"S"},{"id":"6277","num":"6277","name":"1 Granger Rd","type":"S"},{"id":"27702-20160512154122_v40.34","num":"277","name":"Britomart To Waikowhai","type":"B"},{"id":"27701-20160512154122_v40.34","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27701-20160518153157_v41.13","num":"277","name":"Waikowhai To Britomart","type":"B"},{"id":"27702-20160518153157_v41.13","num":"277","name":"Britomart To Waikowhai","type":"B"}],
@@ -36,8 +61,8 @@
                     "user_id":"user01",
                     "description":"2",
                     "type":"S",
-                    "target_id":"1",
-                    "target_name":"1",
+                    "target_id":"2",
+                    "target_name":"2",
                     "created_at":"2016-06-17 01:44:53",
                     "updated_at":"2016-06-17 01:44:53"
                 }
@@ -61,44 +86,42 @@
             "id" : "8874",
             "num" : "8874",
             "name" : "15 Albert St, Auckland city",
+
             "lat": -36.844278,
             "lng": 174.767650,
             "draggable": true
-        },
-        {   
-            "id" : "8873",
-            "num" : "8873",
-            "name" : "Carrington Rd opp Fifth Ave",
+        }, {
+            "id": "8873",
+            "num": "8873",
+            "name": "Carrington Rd opp Fifth Ave",
             "lat": -36.845385,
             "lng": 174.769734,
             "draggable": true
-        },
-        {   
-            "id" : "8872",
-            "num" : "8872",
-            "name" : "23 Albert St, Auckland city",
+        }, {
+            "id": "8872",
+            "num": "8872",
+            "name": "23 Albert St, Auckland city",
             "lat": -36.845166,
             "lng": 174.768135,
             "draggable": true
-        },
-        {   
-            "id" : "8871",
-            "num" : "8871",
-            "name" : "55 Albert St, Auckland city",
+        }, {
+            "id": "8871",
+            "num": "8871",
+            "name": "55 Albert St, Auckland city",
             "lat": -36.846110,
             "lng": 174.766247,
             "draggable": true
-        },
-        {
-            "id" : "8870",
-            "num" : "8870",
-            "name" : "33 Albert St, Auckland city",
+        }, {
+            "id": "8870",
+            "num": "8870",
+            "name": "33 Albert St, Auckland city",
             "lat": -36.846475,
             "lng": 174.764482,
             "draggable": true
         }
-        
+
     ],
+
 
     "alarmList": [
 
@@ -124,7 +147,9 @@
             "short_name" : "Highbury Shop",
             "route_id" : "973",
             "on_off" : "N"
+
         },
+
         {
             "id" : "4",
             "stop_id" : "2475",
@@ -132,7 +157,8 @@
             "route_id" : "887",
             "on_off" : "Y"
         
-        },     
+        },
+
         {
             "id" : "5",
             "stop_id" : "656",
@@ -140,13 +166,17 @@
             "route_id" : "973",
             "on_off" : "N"
         },
+
         {
+
             "id" : "6",
             "stop_id" : "2475",
             "short_name" : "Constellation",
             "route_id" : "887",
             "on_off" : "Y"
         },
+
+
         {
             "id" : "7",
             "stop_id" : "656",
@@ -182,5 +212,88 @@
                 ]
             }
 
-    ]
+    ],
+
+
+
+    "AutoSuggetList" : [
+
+        {
+            "stop_id":"8951",
+            "stop_name":"25 Staveley Ave",
+            "stop_desc":null,
+            "stop_lat":"-36.9211",
+            "stop_lon":"174.74718",
+            "zone_id":null,
+            "stop_url":null,
+            "stop_code":"8951",
+            "stop_street":null,
+            "stop_city":null,
+            "stop_region":null,
+            "stop_postcode":null,
+            "stop_country":null,
+            "location_type":"0",
+            "parent_station":"11463",
+            "stop_timezone":null,
+            "wheelchair_boarding":null,
+            "direction":null,
+            "position":null,
+            "the_geom":"0101000020E6100000350708E6E8D765403D2CD49AE67542C0",
+            "created_at":"2016-06-18 03:37:48",
+            "updated_at":"2016-06-18 03:37:48"
+        },
+
+
+        {   
+            "stop_id":"8953",
+            "stop_name":"19 Oakdale Rd",
+            "stop_desc":null,
+            "stop_lat":"-36.91896",
+            "stop_lon":"174.74842",
+            "zone_id":null,
+            "stop_url":null,
+            "stop_code":"8953",
+            "stop_street":null,
+            "stop_city":null,
+            "stop_region":null,
+            "stop_postcode":null,
+            "stop_country":null,
+            "location_type":"0",
+            "parent_station":"11461",
+            "stop_timezone":null,
+            "wheelchair_boarding":null,
+            "direction":null,
+            "position":null,
+            "the_geom":"0101000020E610000084F57F0EF3D76540842A357BA07542C0",
+            "created_at":"2016-06-18 03:37:48",
+            "updated_at":"2016-06-18 03:37:48"
+        },
+
+
+        {
+            "stop_id":"8955",
+            "stop_name":"3 Oakdale Rd",
+            "stop_desc":null,
+            "stop_lat":"-36.91773",
+            "stop_lon":"174.74901",
+            "zone_id":null,
+            "stop_url":null,
+            "stop_code":"8955",
+            "stop_street":null,
+            "stop_city":null,
+            "stop_region":null,
+            "stop_postcode":null,
+            "stop_country":null,
+            "location_type":"0",
+            "parent_station":"11460",
+            "stop_timezone":null,
+            "wheelchair_boarding":null,
+            "direction":null,
+            "position":null,
+            "the_geom":"0101000020E610000010CCD1E3F7D765406F47382D787542C0",
+            "created_at":"2016-06-18 03:37:48",
+            "updated_at":"2016-06-18 03:37:48"
+        }
+     ]
+
 }
