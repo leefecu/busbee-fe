@@ -123,6 +123,7 @@
     ],
 
 
+
     "alarmList": [
 
         {
@@ -186,6 +187,7 @@
         }
       
     ],
+
     "alarmResult" : [
             {
                 "user_id" : "user01",
@@ -241,7 +243,38 @@
             "the_geom":"0101000020E6100000350708E6E8D765403D2CD49AE67542C0",
             "created_at":"2016-06-18 03:37:48",
             "updated_at":"2016-06-18 03:37:48"
+        }
+    ],
+
+
+
+    "AutoSuggetList" : [
+
+        {
+            "stop_id":"8951",
+            "stop_name":"25 Staveley Ave",
+            "stop_desc":null,
+            "stop_lat":"-36.9211",
+            "stop_lon":"174.74718",
+            "zone_id":null,
+            "stop_url":null,
+            "stop_code":"8951",
+            "stop_street":null,
+            "stop_city":null,
+            "stop_region":null,
+            "stop_postcode":null,
+            "stop_country":null,
+            "location_type":"0",
+            "parent_station":"11463",
+            "stop_timezone":null,
+            "wheelchair_boarding":null,
+            "direction":null,
+            "position":null,
+            "the_geom":"0101000020E6100000350708E6E8D765403D2CD49AE67542C0",
+            "created_at":"2016-06-18 03:37:48",
+            "updated_at":"2016-06-18 03:37:48"
         },
+
 
 
         {   
@@ -297,3 +330,4 @@
      ]
 
 }
+

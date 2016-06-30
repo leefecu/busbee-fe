@@ -4,28 +4,24 @@ import Header from '../components/header.jsx'
 import Footer from '../components/footer.jsx'
 
 
-class App extends React.Component {
-    constructor(props){
+
+    class App extends React.Component {   
+
+        constructor(props){
         super(props)
 
         this.state = {
             userId: "user01"
         }
-    }
+    } 
 
-
-    componentWillMount(){
+        componentWillMount() {
         const self = this
         self.setState({userId: "user01"})
         console.log(this.state.userId);
 
     }
-
-    class App extends React.Component {    
         componentDidMount(){
-            //set resize function : when the browser is resized.
-            window.addEventListener('resize', this.handleResize.bind(this));  
-            this.handleResize();
 
         if (this.state.userId === "user01") {
             const self = this
@@ -42,27 +38,36 @@ class App extends React.Component {
                     })
                  }, 3000); 
                 console.log("The user " + "[" + this.state.userId + "]" + " has been successfully logged in")
-        } else {
-            console.log("You are not Logged in")
-        }
-    }  
+            } else {
+                console.log("You are not Logged in")
+            }
 
-    handleResize(){
-        //get window height size
-        var windowH = window.innerHeight;
-        //get footer height size
-        var footerH = document.getElementById('ft').clientHeight;
-        //get header height size : header size is 0px in Main(home) page
-        var headerH = 0;
-        if(this.props.location.pathname != '/'){
-            //get header height size
-            headerH = ReactDOM.findDOMNode(this).children[0].clientHeight;
-        }
-        //get content div height size : whole window height size - header and footer height size
-        var contentH = windowH - (headerH+footerH);
-        //set content height size
-        document.getElementById("cont").style.height = contentH+"px"; 
-    }
+
+        //set resize function : when the browser is resized.
+                 window.addEventListener('resize', this.handleResize.bind(this));  
+                 this.handleResize();
+             }
+ 
+         handleResize(){
+             //get window height size
+             var windowH = window.innerHeight;
+             //get footer height size
+             var footerH = document.getElementById('ft').clientHeight;
+             //get header height size : header size is 0px in Main(home) page
+             var headerH = 0;
+             if(this.props.location.pathname != '/'){
+                 //get header height size
+                 headerH = ReactDOM.findDOMNode(this).children[0].clientHeight;
+             }
+             //get content div height size : whole window height size - header and footer height size
+             var contentH = windowH - (headerHfooterH);
+             //set content height size
+             document.getElementById("cont").style.height = contentH+"px"; 
+          }
+
+
+
+
 
 
     render() {
