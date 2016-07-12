@@ -122,235 +122,130 @@
 
     ],
 
-    "alarmList": [{
-            "id": "1",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
+
+
+    "alarmList": [
+
+        {
+            "id" : "1",
+            "user_id" : "user01",
+            "stop_id" : "2475",
+            "short_name" : "Constellation",
+            "route_id" : "887",
+            "on_off" : "Y"
+        },
+        {
+            "id" : "2",
+            "stop_id" : "2475",
+            "short_name" : "Constellation",
+            "route_id" : "887",
+            "on_off" : "Y"
+                 
+        },  
+        {
+            "id" : "3",
+            "stop_id" : "656",
+            "short_name" : "Highbury Shop",
+            "route_id" : "973",
+            "on_off" : "N"
 
         },
 
         {
-            "id": "2",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
+            "id" : "4",
+            "stop_id" : "2475",
+            "short_name" : "Constellation",
+            "route_id" : "887",
+            "on_off" : "Y"
+        
         },
 
         {
-            "id": "3",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-
+            "id" : "5",
+            "stop_id" : "656",
+            "short_name" : "Highbury Shop",
+            "route_id" : "973",
+            "on_off" : "N"
         },
 
         {
-            "id": "4",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-        },
 
-        {
-            "id": "5",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-        }, {
-            "id": "6",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "7",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "8",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-
-        },
-
-        {
-            "id": "9",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-        },
-
-        {
-            "id": "10",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-        },
-
-        {
-            "id": "11",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "12",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "13",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-
-        },
-
-        {
-            "id": "14",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
+            "id" : "6",
+            "stop_id" : "2475",
+            "short_name" : "Constellation",
+            "route_id" : "887",
+            "on_off" : "Y"
         },
 
 
         {
-            "id": "16",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "17",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "18",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-
-        },
-
-        {
-            "id": "19",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-        },
-
-        {
-            "id": "20",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-        },
-
-        {
-            "id": "21",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "22",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "23",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-
-        },
-
-        {
-            "id": "24",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-        },
-
-        {
-            "id": "25",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-        },
-
-        {
-            "id": "26",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-        },
-
-        {
-            "id": "27",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "28",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-
-        },
-
-        {
-            "id": "29",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
-
-        },
-
-        {
-            "id": "30",
-            "num": "887",
-            "stop": "2475 - Constellation",
-            "type": "N"
-        },
-
-        {
-            "id": "31",
-            "num": "656",
-            "stop": "4334 - Highbury Shop",
-            "type": "Y"
+            "id" : "7",
+            "stop_id" : "656",
+            "short_name" : "Highbury Shop",
+            "route_id" : "973",
+            "on_off" : "N"
         }
+      
+    ],
 
+    "alarmResult" : [
+            {
+                "user_id" : "user01",
+                "alarm_data" : [
+                    {
+                         "bus_num" : "274",
+                         "arrive_time" : "11:32"
+                    },
+
+                    {
+                         "bus_num" : "975",
+                         "arrive_time" : "11:37"
+                    }
+                ]
+            },
+
+            {
+                "user_id" : "user02",
+                "alarm_data" : [
+                    {
+                         "bus_num" : null,
+                         "arrive_time" : null
+                    }
+                ]
+            }
 
     ],
+
+
+
+    "AutoSuggetList" : [
+
+        {
+            "stop_id":"8951",
+            "stop_name":"25 Staveley Ave",
+            "stop_desc":null,
+            "stop_lat":"-36.9211",
+            "stop_lon":"174.74718",
+            "zone_id":null,
+            "stop_url":null,
+            "stop_code":"8951",
+            "stop_street":null,
+            "stop_city":null,
+            "stop_region":null,
+            "stop_postcode":null,
+            "stop_country":null,
+            "location_type":"0",
+            "parent_station":"11463",
+            "stop_timezone":null,
+            "wheelchair_boarding":null,
+            "direction":null,
+            "position":null,
+            "the_geom":"0101000020E6100000350708E6E8D765403D2CD49AE67542C0",
+            "created_at":"2016-06-18 03:37:48",
+            "updated_at":"2016-06-18 03:37:48"
+        }
+    ],
+
 
 
     "AutoSuggetList" : [
@@ -379,6 +274,7 @@
             "created_at":"2016-06-18 03:37:48",
             "updated_at":"2016-06-18 03:37:48"
         },
+
 
 
         {   
