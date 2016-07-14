@@ -64,7 +64,7 @@ class Favorite extends React.Component {
                 </table>
                  <table>
                     <thead>
-                        <tr>
+                        <tr className="table_Stop">
                             <th>Stop Num</th>
                             <th>Description</th>
                             <th>Del</th>

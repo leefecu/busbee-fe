@@ -19,3 +19,38 @@ body {
 .content{
 	overflow-x: auto;
 }
+
+.PageSlider-enter { 
+
+    transform: translateX(-500px);
+    -ms-transform:translateX(-500px);
+    -webkit-transform:translateX(-500px);
+   
+}
+.PageSlider-enter.PageSlider-enter-active {
+
+    transform: translateX(0);
+    -ms-transform:translateX(0);
+    -webkit-transform:translateX(0);
+
+    transition-duration: 10000ms;
+    -webkit-transition-duration:10000ms;
+}
+.PageSlider-leave {
+
+    transform: translateX(0);
+    -ms-transform:translateX(0);
+    -webkit-transform:translateX(0);
+
+    transition-duration: 10000ms;
+    -webkit-transition-duration:10000ms;
+	
+}
+.PageSlider-leave.PageSlider-leave-active {
+
+    transform: translateX(500px);
+    -ms-transform:translateX(500px);
+    -webkit-transform:translateX(500px);
+    
+	
+}

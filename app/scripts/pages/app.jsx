@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from '../components/header.jsx'
-import Footer from '../components/footer.jsx'
+import Header from '../components/header.jsx';
+import Footer from '../components/footer.jsx';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class App extends React.Component {    
     componentDidMount(){
@@ -33,7 +34,16 @@ class App extends React.Component {
                 { this.props.location.pathname === '/' ? null : <Header pathname={this.props.location.pathname} pathRouteName={this.props.routes[1].name}/>}
 
                 <div className="content" id="cont">
-                    {this.props.children}
+
+                    <ReactCSSTransitionGroup
+                        component="div"
+                        transitionName="PageSlider"
+                        transitionEnterTimeout={10000}
+                        transitionLeaveTimeout={10000}
+                        >
+                        {this.props.children}
+                    </ReactCSSTransitionGroup>
+
                 </div>
 
                 <Footer pathname={this.props.location.pathname} />
